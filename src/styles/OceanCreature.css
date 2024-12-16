@@ -1,0 +1,25 @@
+.creature-container {
+    display: inline-block;
+    position: relative;
+    margin: 10px;
+    cursor: pointer;
+  }
+  
+  .creature-image {
+    width: 150px;
+    height: auto;
+    transition: filter 0.3s ease, transform 0.3s ease;
+  }
+  
+  .creature-image:hover {
+    filter: drop-shadow(0 0 10px rgba(255, 247, 0, 0.8));
+    transform: scale(1.1);
+  }
+  
+  .creature-name {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 16px;
+    color: white;
+  }
+  

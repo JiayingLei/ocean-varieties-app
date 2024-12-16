@@ -1,0 +1,28 @@
+.details-page {
+    background-color: black;
+    color: white;
+    text-align: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  .details-image {
+    width: 300px;
+    height: auto;
+    margin: 20px 0;
+  }
+  
+  .back-button {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .back-button:hover {
+    background-color: #0056b3;
+  }
+  
