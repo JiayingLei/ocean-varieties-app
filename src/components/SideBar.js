@@ -37,7 +37,7 @@ const SideBar = ({ onTypeSelect }) => {
           className="icon" 
           onClick={() => handleIconClick("介部")}
           style={{ opacity: selectedIcon === "介部" ? 1 : 0.5 }}
-          title={"介部"} 
+          data-tooltip="介部"
         >
           <img src="/homepage/section-two/icons/icon-介.png" alt="Icon 介部" />
         </div>
@@ -48,7 +48,7 @@ const SideBar = ({ onTypeSelect }) => {
           className="icon" 
           onClick={() => handleIconClick("鳞部")}
           style={{ opacity: selectedIcon === "鳞部" ? 1 : 0.5 }} 
-          title={"鳞部"} 
+          data-tooltip="鳞部"
         >
           <img src="/homepage/section-two/icons/icon-鳞.png" alt="Icon 鳞部" />
         </div>
@@ -59,7 +59,7 @@ const SideBar = ({ onTypeSelect }) => {
           className="icon" 
           onClick={() => handleIconClick("兽部")}
           style={{ opacity: selectedIcon === "兽部" ? 1 : 0.5 }} 
-          title={"兽部"} 
+          data-tooltip="兽部"
         >
           <img src="/homepage/section-two/icons/icon-兽.png" alt="Icon 兽部" />
         </div>
@@ -70,7 +70,7 @@ const SideBar = ({ onTypeSelect }) => {
           className="icon" 
           onClick={() => handleIconClick("虫部")}
           style={{ opacity: selectedIcon === "虫部" ? 1 : 0.5 }} 
-          title={"虫部"} 
+          data-tooltip="虫部"
         >
           <img src="/homepage/section-two/icons/icon-虫.png" alt="Icon 虫部" />
         </div>

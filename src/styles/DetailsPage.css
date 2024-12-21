@@ -1,28 +1,57 @@
 .details-page {
-    background-color: black;
-    color: white;
-    text-align: center;
-    min-height: 100vh;
-    padding: 20px;
-  }
-  
-  .details-image {
-    width: 300px;
-    height: auto;
-    margin: 20px 0;
-  }
-  
-  .back-button {
-    background-color: #007bff;
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    margin-bottom: 20px;
-  }
-  
-  .back-button:hover {
-    background-color: #0056b3;
-  }
-  
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.back-button {
+  position: fixed; 
+  top: 5.9vh; 
+  left: 4.0vw; 
+  z-index: 1000; 
+  cursor: pointer;
+}
+
+.back-button img {
+  max-width: 6.6vw; 
+  max-height: 3.3vh; 
+  transition: filter 0.3s ease, transform 0.3s ease; 
+}
+
+.back-button img:hover {
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 1));
+  transform: scale(1.1);
+}
+
+.content {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.section {
+  height: 100vh; /* 每个section充满屏幕 */
+  width: 100vw; /* 每个section宽度为100vw */
+  padding: 40px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.section.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}

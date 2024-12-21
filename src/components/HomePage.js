@@ -126,7 +126,7 @@ const HomePage = () => {
         </div>
         {/* SideBar 组件 */}
         {showSideBar && <SideBar onTypeSelect={handleTypeSelect} />}
-        <div class="bottom-text">
+        <div className="bottom-text">
           <p>无穷的远方，无数的生命，都与我们有关。</p>
           <p>Infinite distances, countless lives, all related to us.</p>
         </div>

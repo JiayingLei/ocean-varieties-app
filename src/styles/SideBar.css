@@ -52,3 +52,32 @@
   max-height: 4.4vh;
   object-fit: contain;
 }
+
+
+.icon {
+  position: relative;
+  display: inline-block;
+}
+
+.icon::after {
+  content: attr(data-tooltip); /* 使用 data-tooltip 的内容 */
+  white-space: nowrap; /* 允许换行 */
+  position: absolute;
+  top: 100%; /* 提示框在图标下方 */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333333;
+  color: #FFFFFF;
+  padding: 4px 16px;
+  font-size: 16px;
+  text-align: center; /* 水平居中文本 */
+  visibility: hidden;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+  pointer-events: none;
+}
+
+.icon:hover::after {
+  visibility: visible;
+  opacity: 1;
+}

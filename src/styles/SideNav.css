@@ -1,0 +1,50 @@
+.side-nav {
+  position: fixed; 
+  right: 0; 
+  top: 50%; 
+  transform: translateY(-50%); 
+  width: 6.3%; 
+  height: 70.2vh; 
+  transition: right 0.3s ease; 
+  z-index: 1000; 
+  overflow: hidden; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;    
+}
+
+.nav-icon-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly; 
+  align-items: center;     
+  height: 75%;            
+  opacity: 1; 
+  visibility: visible; 
+  transition: opacity 0.3s ease, visibility 0s 0s; 
+}
+
+.nav-icon img {
+  max-width: 2.5vw;
+  max-height: 4.4vh;
+  object-fit: contain;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0.6; /* 默认透明度 */ 
+}
+
+.nav-icon.active img {
+  transform: scale(1.5);
+  opacity: 1; 
+}
+
+.nav-icon img:hover {
+  transform: scale(1.5);
+  opacity: 1; 
+}
+
+.nav-line img {
+  max-width: 2.5vw;
+  max-height: 4.4vh;
+  object-fit: contain;
+}
