@@ -1,0 +1,13 @@
+.actual-image {
+    padding: 20px;
+    background-color: #e6e6fa;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .creature-image {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ccc;
+  }
+  

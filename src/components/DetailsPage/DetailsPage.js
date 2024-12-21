@@ -3,6 +3,10 @@ import { useParams, useNavigate } from "react-router-dom";
 import { creatures } from "../../data/creatures";
 import "./DetailsPage.css";
 import SideNav from "../SideNav/SideNav";
+import Jigsaw from "../Jigsaw/Jigsaw";
+import ProtectionLevel from "../ProtectionLevel/ProtectionLevel";
+import { EndangerReasons, EndangerState } from "../Endangerment/Endangerment";
+import ActualImage from "../ActualImage/ActualImage";
 
 const DetailsPage = () => {
   const { id } = useParams(); 
@@ -20,18 +24,18 @@ const DetailsPage = () => {
     scrollToSection(section, subSection);
   };
 
-  // 每个section的内容
+  // 每个 Section 的内容
   const sections = [
-    { title: 'Section 1', content: 'Content of Section 1' },
-    { title: 'Section 2', content: 'Content of Section 2' },
+    { title: 'Section 1', content: <Jigsaw creature={creature} /> }, // Jigsaw for Section 1
+    { title: 'Section 2', content: <ProtectionLevel creature={creature} /> }, // ProtectionLevel for Section 2
     { 
       title: 'Section 3', 
-      content: 'Content of Section 3', 
+      content: <EndangerReasons creature={creature} />, // EndangerReasons for Section 3
       subSections: [
-        { title: 'Section 3A', content: 'Content of Section 3A' },
-      ] 
+        { title: 'Section 3A', content: <EndangerState creature={creature} /> }, // EndangerState for Section 3A
+      ]
     },
-    { title: 'Section 4', content: 'Content of Section 4' }
+    { title: 'Section 4', content: <ActualImage creature={creature} /> } // ActualImage for Section 4
   ];
 
   // 滚动跳转到对应的 section & subsection
