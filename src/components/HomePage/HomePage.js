@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react"; 
 import { useNavigate } from "react-router-dom"; 
-import "../styles/HomePage.css"; 
-import { creatures } from "../data/creatures";
-import OceanCreature from "./OceanCreature";
-import SideBar from "./SideBar";
+import "./HomePage.css"; 
+import { creatures } from "../../data/creatures";
+import OceanCreature from "../OceanCreature/OceanCreature";
+import SideBar from "../SideBar/SideBar";
 
 const HomePage = () => {
   const navigate = useNavigate();

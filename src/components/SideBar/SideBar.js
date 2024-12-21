@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../styles/SideBar.css";
+import "./SideBar.css";
 
 const SideBar = ({ onTypeSelect }) => {
   const [isOpen, setIsOpen] = useState(false);

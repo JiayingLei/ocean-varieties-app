@@ -48,3 +48,39 @@
   max-height: 4.4vh;
   object-fit: contain;
 }
+
+
+.nav-icon {
+  position: relative;
+  display: inline-block;
+}
+
+.nav-icon::after {
+  content: attr(data-tooltip); /* 使用 data-tooltip 的内容 */
+  white-space: pre-line; /* 允许换行 */
+  position: absolute;
+  top: 100%; /* 提示框在图标下方 */
+  left: 50%;
+  transform: translateX(-50%);
+  color: #333333;
+  padding: 4px 16px;
+  font-size: 16px;
+  text-align: center; /* 水平居中文本 */
+  visibility: hidden;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+  pointer-events: none;
+  font-family: "LQXianEr";
+}
+
+.nav-icon:hover::after {
+  visibility: visible;
+  opacity: 1;
+}
+
+@font-face {
+  font-family: "LQXianEr";
+  src: url("../../assets/fonts/LQXianEr.ttf");
+  font-weight: normal;
+  font-style: normal;
+}

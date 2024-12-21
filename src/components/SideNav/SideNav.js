@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../styles/SideNav.css";
+import "./SideNav.css";
 
 const SideNav = ({ currentSection, onSectionSelect }) => {
   const [selectedIcon, setSelectedIcon] = useState(null);
@@ -16,7 +16,7 @@ const SideNav = ({ currentSection, onSectionSelect }) => {
         <div
           className={`nav-icon ${currentSection === 0 ? 'active' : ''}`}
           onClick={() => handleIconClick(0)}
-          title={"拼图\t Jigsaw"}
+          data-tooltip={"拼图\n Jigsaw"}
         >
           <img src="/detailspage/icons/icon-1.png" alt="Icon 1" />
         </div>
@@ -27,7 +27,7 @@ const SideNav = ({ currentSection, onSectionSelect }) => {
         <div
           className={`nav-icon ${currentSection === 1 ? 'active' : ''}`}
           onClick={() => handleIconClick(1)}
-          title={"保护级别\t Protection Level"}
+          data-tooltip={"保护级别\n Protection Level"}
         >
           <img src="/detailspage/icons/icon-2.png" alt="Icon 2" />
         </div>
@@ -38,7 +38,7 @@ const SideNav = ({ currentSection, onSectionSelect }) => {
         <div
           className={`nav-icon ${currentSection === 2 ? 'active' : ''}`}
           onClick={() => handleIconClick(2)} 
-          title={"濒危原因\t Endangerment Reasons"}
+          data-tooltip={"濒危原因\n Endangerment Reasons"}
         >
           <img src="/detailspage/icons/icon-3.png" alt="Icon 3 & 3A" />
         </div>
@@ -49,7 +49,7 @@ const SideNav = ({ currentSection, onSectionSelect }) => {
         <div
           className={`nav-icon ${currentSection === 3 ? 'active' : ''}`}
           onClick={() => handleIconClick(3)}
-          title={"实际图像\t Actual Image"}
+          data-tooltip={"实际图像\n Actual Image"}
         >
           <img src="/detailspage/icons/icon-4.png" alt="Icon 4" />
         </div>

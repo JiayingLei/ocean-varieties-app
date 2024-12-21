@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/OceanCreature.css";
+import "./OceanCreature.css";
 
 const OceanCreature = ({ creature, onClick, isGrayedOut }) => {
   return (
