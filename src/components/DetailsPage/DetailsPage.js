@@ -89,14 +89,13 @@ const DetailsPage = () => {
             ref={(el) => (sectionsRef.current[index] = el)}
             className={`section ${currentSection === index ? 'active' : ''}`}
           >
-            <h2>{section.title}</h2>
-            <p>{section.content}</p>
+            {section.content}
 
             {/* 处理嵌套的子section */}
             {section.subSections && currentSection === 2 && currentSubSection !== null && (
               <div className="subsection">
                 <h3>{section.subSections[currentSubSection].title}</h3>
-                <p>{section.subSections[currentSubSection].content}</p>
+                {section.subSections[currentSubSection].content}
               </div>
             )}
           </div>
