@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { useParams, useNavigate } from "react-router-dom";
-import { creatures } from "../../data/creatures";
+import { creatures } from "../../contants/creatures";
 import "./DetailsPage.css";
 import SideNav from "../SideNav/SideNav";
 import Jigsaw from "../Jigsaw/Jigsaw";

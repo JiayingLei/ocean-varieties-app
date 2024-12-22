@@ -1,13 +1,7 @@
 .actual-image {
-    padding: 20px;
-    background-color: #e6e6fa;
-    border-radius: 8px;
-    text-align: center;
-  }
-  
-  /* .creature-image {
-    max-width: 100%;
-    height: auto;
-    border: 2px solid #ccc;
-  } */
-  
+  width: 100vw;
+  height: 100vh;
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}

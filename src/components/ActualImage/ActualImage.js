@@ -3,11 +3,10 @@ import "./ActualImage.css";
 
 const ActualImage = ({ creature }) => {
   return (
-    <div className="actual-image">
-      <h3>Actual Image</h3>
-      {/* <img src={creature.actualImage} alt={`${creature.name.zh} actual habitat`} />
-      <p>{creature.description}</p> */}
-    </div>
+    <div 
+      className="actual-image" 
+      style={{ backgroundImage: `url(${creature.actualImage})` }}
+    ></div>
   );
 };
 

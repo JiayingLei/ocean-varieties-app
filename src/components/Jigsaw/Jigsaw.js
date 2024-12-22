@@ -17,7 +17,7 @@ function DemoPuzzle({ id, creature }) {
       const keyboard = new headbreaker.Canvas(puzzle.id, {
         width: 900,
         height: 400,
-        pieceSize: 200 / endangerment,
+        pieceSize: 300 / endangerment,
         image: creatureImage,
         strokeWidth: 2.5, 
         strokeColor: '#F0F0F0',

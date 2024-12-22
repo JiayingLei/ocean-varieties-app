@@ -1,6 +1,3 @@
-import { EndangerReasons, EndangerState } from "../components/Endangerment/Endangerment";
-import ProtectionLevel from "../components/ProtectionLevel/ProtectionLevel";
-
 export const creatures = [
     {
       id: 1,
@@ -158,14 +155,9 @@ export const creatures = [
         }
       },
       "image": "/images/井鱼、海鰌、跨鲨-2.png",
-      "position": {
-        "left": 260,
-        "top": 1470
-      },
-      "size": {
-        "width": 1095,
-        "height": 426
-      }
+      "actualImage": "/actual-images/井鱼、海鰌、跨鲨-2.png",
+      "position": { "left": 260, "top": 1470 },
+      "size": { "width": 1095, "height": 426 },
     },
 
     

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react"; 
 import { useNavigate } from "react-router-dom"; 
 import "./HomePage.css"; 
-import { creatures } from "../../data/creatures";
+import { creatures } from "../../contants/creatures";
 import OceanCreature from "../OceanCreature/OceanCreature";
 import SideBar from "../SideBar/SideBar";
 

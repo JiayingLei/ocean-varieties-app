@@ -1,3 +1,4 @@
+/* EndangerReasonsPage */
 .endanger-reasons {
   position: relative;
   width: 100vw;
@@ -13,6 +14,45 @@
   padding: 0;
 }  
 
+.endanger-reasons-container {
+  display: flex;
+  justify-content: space-around; /* 水平均匀分布 */
+  align-items: center; 
+  flex-wrap: wrap;
+  width: 80%; 
+  height: 100%;
+}
+
+.reason-container {
+  text-align: center;
+  background-color: transparent; /* 背景透明 */
+}
+
+.reason-image {
+  max-width: 22.65vw; 
+  max-height: 40.3vh; 
+  object-fit: cover; /* 图片适应容器 */
+}
+
+.reason-name {
+  margin-top: 30px;
+}
+
+.reason-name .chinese, .reason-name .english {
+  font-family: "LQXianEr";
+  color: #333333;
+  font-size: 3vw;
+  line-height: 1;
+}
+@font-face {
+  font-family: "LQXianEr";
+  src: url("../../assets/fonts/LQXianEr.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* EndangerStatePage */
 .endanger-state {
   position: relative;
   width: 100vw;
@@ -27,3 +67,37 @@
   margin: 0;
   padding: 0;
 } 
+
+.state-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  text-align: center;
+  align-items: center; 
+  width: 80%; 
+  height: 100%;
+}
+
+.state-chinese {
+  font-family: "FZLanTing", sans-serif; /* 中文字体 */
+  color: #333333;
+  font-size: 3vw;
+  line-height: 1;
+  white-space: pre-line; /* 处理换行符 */
+  margin: 10px 0; /* 上下间距 */
+}
+@font-face {
+  font-family: "FZLanTing";
+  src: url("../../assets/fonts/FZLanTingHeiPro_GB18030.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.state-english {
+  font-family: "Times New Roman", serif; /* 英文字体 */
+  color: #333333;
+  font-size: 3vw;
+  line-height: 1;
+  white-space: pre-line; /* 处理换行符 */
+  margin: 10px 0; /* 上下间距 */
+}
