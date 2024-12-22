@@ -5,6 +5,21 @@ import endangerReasons from '../../contants/endangerReasons';
 export const EndangerReasons = ({ creature }) => {
   return (
     <div className="endanger-reasons">
+      <div 
+        style={{
+          backgroundImage: `url(${creature.image})`,
+          backgroundSize: 'auto 100%',
+          backgroundPosition: 'left top',
+          backgroundRepeat: 'no-repeat',
+          opacity: 0.3,  
+          position: 'absolute',
+          top: '10%',
+          bottom: '10%',
+          left: '50%', 
+          right: 0,
+          zIndex: 0,  
+        }}
+      />
       <div className="endanger-reasons-container">
         {creature.endangerment.reasons.zh.map((reasonZh, index) => {
           const matchedReason = endangerReasons.find(reason => reason.zh === reasonZh);
