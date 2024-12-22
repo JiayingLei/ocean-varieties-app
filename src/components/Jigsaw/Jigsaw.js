@@ -1,37 +1,41 @@
 import headbreaker from 'headbreaker';
 import { useEffect, useRef } from 'react';
+import { useNavigate } from "react-router-dom";
 import "./Jigsaw.css";
 
 function DemoPuzzle({ id, creature }) {
   const puzzleRef = useRef(null);
+  const endangerment = creature.endangerment.level; // 根据濒危等级设置拼图难易程度（介于2~5）
 
   useEffect(() => {
     const puzzle = puzzleRef.current;
     const audio = new Audio('/detailspage/connect.wav');
-    const amaral = new Image();
-    amaral.src = creature.image;
+    const creatureImage = new Image();
+    creatureImage.src = creature.image;
 
-    amaral.onload = () => {
+    creatureImage.onload = () => {
       const keyboard = new headbreaker.Canvas(puzzle.id, {
-        width: 800,
-        height: 650,
-        pieceSize: 100,
-        image: amaral,
-        strokeWidth: 2.5,
+        width: 900,
+        height: 400,
+        pieceSize: 200 / endangerment,
+        image: creatureImage,
+        strokeWidth: 2.5, 
         strokeColor: '#F0F0F0',
         outline: new headbreaker.outline.Rounded(),
+        preventOffstageDrag: true,
+        fixed: true,
       });
 
-      keyboard.adjustImagesToPuzzleWidth();
+      keyboard.adjustImagesToPuzzleHeight();
       keyboard.autogenerate({
-        horizontalPiecesCount: 3,
-        verticalPiecesCount: 3,
+        verticalPiecesCount: endangerment, 
+        horizontalPiecesCount: Math.floor(creature.size.width / creature.size.height * endangerment),
         insertsGenerator: headbreaker.generators.random,
       });
 
       // Make canvas focusable and listen to ctrl and shift keys
       keyboard.registerKeyboardGestures();
-      keyboard.shuffle(0.7);
+      // keyboard.shuffle(0.7); // TODO: 待更改打乱规则
       keyboard.draw();
 
       keyboard.onConnect((_piece, figure, _target, targetFigure) => {
@@ -39,7 +43,7 @@ function DemoPuzzle({ id, creature }) {
         audio.play();
 
         // Paint borders on click of connecting and connected figures
-        figure.shape.stroke('yellow');
+        figure.shape.stroke('yellow'); 
         targetFigure.shape.stroke('yellow');
         keyboard.redraw();
 
@@ -61,10 +65,28 @@ function DemoPuzzle({ id, creature }) {
 }
 
 export default function Jigsaw({ creature }) {
+  const navigate = useNavigate();
+
   return (
-    <div className='jigsaw'>
-      <h1>{creature.name}</h1>
+    <div className="jigsaw">
+    {/* 学名容器 */}
+    <div className="scientific-name-container">
+      <div className="back-button-0" onClick={() => navigate("/")}>
+        <img src="/detailspage/back-button.png" alt="Back" />
+      </div>
+      <p className="scientific-name">
+        {creature.name.zh}{creature.name.en} — {creature.scientificName.zh}{creature.scientificName.en}
+      </p>
+    </div>
+
+    {/* 介绍容器 */}
+    <div className="introduction-container">
+      <div className="species-distribution">
+        <p className="chinese">{creature.species.zh + "\n" + creature.distribution.zh}</p>
+        <p className="english">{creature.species.en + "\n" + creature.distribution.en}</p>
+      </div>
       <DemoPuzzle id="puzzle" creature={creature} />
     </div>
+  </div>
   );
 }

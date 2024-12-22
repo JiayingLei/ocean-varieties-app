@@ -120,7 +120,7 @@ const HomePage = () => {
               key={creature.id}
               creature={creature}
               onClick={() => handleClick(creature.id)}
-              isGrayedOut={selectedType && creature.type !== selectedType} // 是否灰化
+              isGrayedOut={selectedType && creature.type.zh !== selectedType} // 是否灰化
             />
           ))}
         </div>

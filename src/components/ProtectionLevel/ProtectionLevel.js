@@ -6,8 +6,8 @@ const ProtectionLevel = ({ creature }) => {
     <div className="protection-level">
       <h3>Protection Level</h3>
       <p>
-        The protection level of <strong>{creature.name}</strong> is classified as: 
-        <span className="level">{creature.protectionLevel}</span>.
+        {/* The protection level of <strong>{creature.name.zh}</strong> is classified as: 
+        <span className="level">{creature.protectionLevel}</span>. */}
       </p>
     </div>
   );

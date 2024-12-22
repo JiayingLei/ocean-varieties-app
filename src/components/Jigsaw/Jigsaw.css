@@ -1,20 +1,90 @@
 .jigsaw {
-  width: 100vw; 
-  height: 100vh; 
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('../../../public/detailspage/jigsaw-bg.png');
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
   margin: 0;
   padding: 0;
-  background-image: url('../../../public/detailspage/jigsaw-bg.png'); 
-  background-size: "100% 100%";
-  background-position: "center";
-  background-repeat: "no-repeat";
+}
+
+.scientific-name-container {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+  margin-bottom: 10px;
+}
+
+.back-button-0 {
+  cursor: pointer;
+  margin: 0 55px;
+}
+
+.back-button-0 img {
+  max-width: 6.6vw; 
+  max-height: 3.3vh; 
+  transition: filter 0.3s ease, transform 0.3s ease; 
+}
+
+.back-button img:hover {
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 1));
+  transform: scale(1.1);
+}
+
+.scientific-name {
+  text-align: left;
+  font-family: "LQXianEr";
+  color: #333333;
+  font-size: 4vw;
+  line-height: 0;
+  margin-left: 10px;
+}
+@font-face {
+  font-family: "LQXianEr";
+  src: url("../../assets/fonts/LQXianEr.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.introduction-container {
+  width: 100vw;
+  height: 95%; /* 占页面高度的90% */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.species-distribution {
+  width: 90%;
+  text-align: left; /* 中文与英文文字左对齐 */
+  margin-bottom: 20px;
+}
+
+.species-distribution .chinese, .species-distribution .english {
+  font-family: "FZLanTing";
+  font-size: 1.5vw;
+  line-height: 1.2;
+  white-space: pre-line; /* 处理换行符 */
+  color: rgba(51, 51, 51, 0.9); /* 设置透明度 */
+}
+@font-face {
+  font-family: "FZLanTing";
+  src: url("../../assets/fonts/FZLanTingHeiPro_GB18030.ttf");
+  font-weight: normal;
+  font-style: normal;
 }
 
 .puzzle-container {
-  display: block;
-  width: 100vw;
-  height: 80vh;
-  background-color: transparent; /* 完全透明背景 */
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  flex: 3;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  /* background-color: transparent; */
+  padding-right: 20px; 
 }

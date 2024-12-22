@@ -18,7 +18,7 @@ export const EndangerState = ({ creature }) => {
   return (
     <div className="endanger-state">
       <h3>Current Endangerment State</h3>
-      <p>{creature.endangerState}</p>
+      {/* <p>{creature.endangerState.zh}</p> */}
     </div>
   );
 };

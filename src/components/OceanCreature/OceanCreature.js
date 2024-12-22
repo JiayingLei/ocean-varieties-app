@@ -12,7 +12,7 @@ const OceanCreature = ({ creature, onClick, isGrayedOut }) => {
     >
       <img
         src={creature.image}
-        alt={creature.name}
+        alt={creature.name.zh}
         className={`creature-image ${isGrayedOut ? "grayed-out" : ""}`} // 根据 isGrayedOut 添加类名
         style={{
           maxWidth: `${(creature.size.width / 1920) * 100}vw`,
@@ -23,7 +23,7 @@ const OceanCreature = ({ creature, onClick, isGrayedOut }) => {
         }}
         onClick={() => onClick(creature.id)}
       />
-      <div className="tooltip">{creature.description}</div>
+      <div className="tooltip">{creature.description.zh}</div>
     </div>
   );
 };

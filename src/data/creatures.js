@@ -1,3 +1,6 @@
+import { EndangerReasons, EndangerState } from "../components/Endangerment/Endangerment";
+import ProtectionLevel from "../components/ProtectionLevel/ProtectionLevel";
+
 export const creatures = [
     {
       id: 1,
@@ -98,15 +101,74 @@ export const creatures = [
       position: { left: 328, top: 2248 },
       size: { width: 969, height: 318 }, 
     },
+
     {
-      id: 12,
-      name: "跨鲨",
-      type: "兽部",
-      image: "/images/井鱼、海鰌、跨鲨-2.png",
-      description: "跨鲨，潜水时露出巨大尾鳍，常将体躯跃出水面，或侧身竖起一侧鳍肢。",
-      position: { left: 260, top: 1470 },
-      size: { width: 1095, height: 426 }, 
+      "id": 12,
+      "name": {
+        "zh": "跨鲨",
+        "en": "Kua Sha"
+      },
+      "scientificName": {
+        "zh": "座头鲸",
+        "en": "Humpback Whale"
+      },
+      "type": {
+        "zh": "兽部",
+        "en": "Mammalia"
+      },
+      "species": {
+        "zh": "鲸目须 | 鲸科座 | 头鲸属 | 哺乳动物",
+        "en": "Cetacea | Balaenopteridae | Megaptera | Mammal"
+      },
+      "distribution": {
+        "zh": "座头鲸在世界各大洋均有分布，尤以南极水域较多。在中国分布于黄海、东海、南海海域。",
+        "en": "Humpback whales are distributed across the world's oceans, especially in Antarctic waters. In China, they are found in the Yellow Sea, East China Sea, and South China Sea."
+      },
+      "description": {
+        "zh": "跨鲨，潜水时露出巨大尾鳍，常将体躯跃出水面，或侧身竖起一侧鳍肢。",
+        "en": "Kua Sha, known for its large tail flukes visible during dives, often breaches out of the water or raises a single flipper vertically."
+      },
+      "protectionLevel": {
+        "CMS": {
+          "zh": "列入《保护野生动物迁徙物种公约》（CMS）附录Ⅰ。",
+          "en": "Listed in Appendix I of the Convention on the Conservation of Migratory Species of Wild Animals (CMS)."
+        },
+        "CITES": {
+          "zh": "列入《濒临绝种野生动植物国际贸易公约》（CITES）附录Ⅰ。",
+          "en": "Listed in Appendix I of the Convention on International Trade in Endangered Species of Wild Fauna and Flora (CITES)."
+        },
+        "IUCN": {
+          "zh": "列入《世界自然保护联盟濒危物种红色名录》（The IUCN Red List）：无危物种（LC），2018年评估。",
+          "en": "Listed as Least Concern (LC) on the IUCN Red List of Threatened Species (2018 assessment)."
+        },
+        "CHINA": {
+          "zh": "列入《中国物种红色名录》：极危（CR）。\n列入《国家重点保护野生动物名录》：国家二级保护动物。\n列入《中国国家重点保护野生动物名录》一级。",
+          "en": "Listed as Critically Endangered (CR) in the China Species Red List.\nIncluded in the National Key Protected Wild Animal List as a Class II protected species.\nListed in China's National Key Protected Wild Animal List as Class I."
+        }
+      },
+      "endangerment": {
+        "level": 2,
+        "reasons": {
+          "zh": ["海滩搁浅", "船只碰撞", "商业捕杀"],
+          "en": ["Beach strandings", "Ship collisions", "Commercial whaling"]
+        },
+        "state": {
+          "zh": "全球捕鲸业导致鲸鱼数量锐减，\n每一代人总认为自己所处的世界才是正常的世界。",
+          "en": "Global whaling has drastically reduced whale populations. Each generation assumes the world they inhabit is the normal one."
+        }
+      },
+      "image": "/images/井鱼、海鰌、跨鲨-2.png",
+      "position": {
+        "left": 260,
+        "top": 1470
+      },
+      "size": {
+        "width": 1095,
+        "height": 426
+      }
     },
+
+    
     {
       id: 13,
       name: "锯鲨",

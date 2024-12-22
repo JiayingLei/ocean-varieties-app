@@ -78,28 +78,31 @@ const DetailsPage = () => {
 
   return (
     <div className="details-page" onWheel={handleScroll}>
-      <div className="back-button" onClick={() => navigate("/")}>
-        <img src="/detailspage/back-button.png" alt="Back" />
-      </div>
+      {currentSection > 0 && (
+        <div className="back-button" onClick={() => navigate("/")}>
+          <img src="/detailspage/back-button.png" alt="Back" />
+        </div>
+      )}
       <SideNav currentSection={currentSection} onSectionSelect={handleSectionSelect} />
       <div className="content">
         {sections.map((section, index) => (
-          <div
-            key={index}
-            ref={(el) => (sectionsRef.current[index] = el)}
-            className={`section ${currentSection === index ? 'active' : ''}`}
-          >
-            {section.content}
+        <div
+          key={index}
+          ref={(el) => (sectionsRef.current[index] = el)}
+          className={`section ${currentSection === index ? 'active' : ''}`}
+        >
+          {/* 当显示子 Section 时，隐藏父 Section 内容 */}
+          {(!section.subSections || currentSubSection === null) && section.content}
 
-            {/* 处理嵌套的子section */}
-            {section.subSections && currentSection === 2 && currentSubSection !== null && (
-              <div className="subsection">
-                <h3>{section.subSections[currentSubSection].title}</h3>
-                {section.subSections[currentSubSection].content}
-              </div>
-            )}
-          </div>
-        ))}
+          {/* 处理嵌套的子 Section */}
+          {section.subSections && currentSection === index && currentSubSection !== null && (
+            <div className="subsection">
+              <h3>{section.subSections[currentSubSection].title}</h3>
+              {section.subSections[currentSubSection].content}
+            </div>
+          )}
+        </div>
+      ))}
       </div>
     </div>
   );
