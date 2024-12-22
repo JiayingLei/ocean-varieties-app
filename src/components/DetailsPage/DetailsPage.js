@@ -91,13 +91,16 @@ const DetailsPage = () => {
           ref={(el) => (sectionsRef.current[index] = el)}
           className={`section ${currentSection === index ? 'active' : ''}`}
         >
-          {/* 当显示子 Section 时，隐藏父 Section 内容 */}
-          {(!section.subSections || currentSubSection === null) && section.content}
+          {/* 渲染父 Section 内容 */}
+          {(!section.subSections || currentSubSection === null) && (
+            <div className="section">
+              {section.content}
+            </div>
+          )}
 
-          {/* 处理嵌套的子 Section */}
+          {/* 渲染子 Section 内容 */}
           {section.subSections && currentSection === index && currentSubSection !== null && (
             <div className="subsection">
-              <h3>{section.subSections[currentSubSection].title}</h3>
               {section.subSections[currentSubSection].content}
             </div>
           )}

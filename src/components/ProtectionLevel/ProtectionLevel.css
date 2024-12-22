@@ -1,6 +1,15 @@
 .protection-level {
-    padding: 20px;
-    background-color: #f5f5dc;
-    border-radius: 8px;
-  }
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('../../../public/detailspage/protection-level-bg.png');
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
   

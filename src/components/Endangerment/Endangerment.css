@@ -1,6 +1,29 @@
-.endanger-reasons, .endanger-state {
-    padding: 20px;
-    background-color: #ffe4e1;
-    border-radius: 8px;
-  }
-  
+.endanger-reasons {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('../../../public/detailspage/endanger-reasons-bg.png');
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}  
+
+.endanger-state {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('../../../public/detailspage/endanger-state-bg.png');
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+} 
