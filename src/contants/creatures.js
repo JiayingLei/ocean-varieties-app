@@ -114,7 +114,7 @@ export const creatures = [
         "en": "Mammalia"
       },
       "species": {
-        "zh": "鲸目须 | 鲸科座 | 头鲸属 | 哺乳动物",
+        "zh": "鲸目 | 须鲸科 | 座头鲸属 | 哺乳动物",
         "en": "Cetacea | Balaenopteridae | Megaptera | Mammal"
       },
       "distribution": {

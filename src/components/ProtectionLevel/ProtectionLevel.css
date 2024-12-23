@@ -16,57 +16,130 @@
 .cms-container {
   width: 100vw;
   height: 100vh;
-  background-size: cover;
-  background-position: center;
+  background-size: 100% auto;
+  background-position: top;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
-.level-container, .cites-container, .iucn-container, .china-container {
+.cites-container, .iucn-container, .china-container {
+  position: relative;
+  flex-grow: 2;
+  width: 100vw;
+  background-size: 100% auto;
+  background-position: top;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.level-container {
+  flex-grow: 1;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 15vh 5vh 0 5vh;
+  z-index: 3;
+}
+
+.china-level-container {
+  flex-grow: 1;
   width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+  padding: 20vh 5vh 5vh 5vh;
+  z-index: 3;
 }
 
-.level-container, .cites-container, .iucn-container, .china-container {
-  flex-grow: 1;
+.level-icon {
+  margin-right: 2vw;
 }
 
-.level-icon, .china-level-icon {
-  margin-right: 10px;
+/* CMS level container 的 level-icon */
+.cms-level-container .level-icon img {
+  max-width: 5vw;
+  max-height: 10vh;
+  object-fit: contain;
 }
 
-.level-text, .china-level-text {
+/* CITES level container 的 level-icon */
+.cites-level-container .level-icon img {
+  max-width: 10vw;
+  max-height: 10vh;
+  object-fit: contain;
+}
+
+/* IUCN level container 的 level-icon */
+.iucn-level-container .level-icon img {
+  max-width: 5vw;
+  max-height: 10vh;
+  object-fit: contain;
+}
+
+/* CHINA level container 的 level-icon */
+.china-level-icon img {
+  max-width: 30vw; 
+  max-height: 15vh; 
+  object-fit: contain;
+}
+
+.level-text {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
-.level-content, .china-level-content {
-  display: block;
-  margin-top: 20px;
-  padding: 10px;
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 5px;
+.china-level-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+  text-align: center; 
 }
 
 .level-container, .china-level-container {
   cursor: pointer;
 }
 
-.level-container:hover, .china-level-container:hover {
-  background-color: rgba(0, 0, 0, 0.3);
+.level-text div, .china-level-text div {
+  font-family: "FZLanTing";
+  font-size: 1.3vw;
+  line-height: 1.2;
+  white-space: pre-line; /* 处理换行符 */
+  color: rgba(51, 51, 51, 1); /* 设置透明度 */
+}
+@font-face {
+  font-family: "FZLanTing";
+  src: url("../../assets/fonts/FZLanTingHeiPro_GB18030.ttf");
+  font-weight: normal;
+  font-style: normal;
 }
 
-.level-text div {
-  font-size: 1rem;
-}
 
-.china-level-text div {
-  font-size: 1.2rem;
-  text-align: center;
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: inherit; /* 使用原背景图 */
+  background-size: inherit;
+  background-repeat: inherit;
+  background-position: inherit;
+  filter: brightness(0) invert(1); /* 叠加滤镜 */
+  z-index: 1; 
+  pointer-events: none; /* 确保不影响交互 */
 }
-
-  
