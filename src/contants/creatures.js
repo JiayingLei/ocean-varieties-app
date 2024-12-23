@@ -122,8 +122,8 @@ export const creatures = [
         "en": "Humpback whales are distributed across the world's oceans, especially in Antarctic waters. In China, they are found in the Yellow Sea, East China Sea, and South China Sea."
       },
       "description": {
-        "zh": "跨鲨，潜水时露出巨大尾鳍，常将体躯跃出水面，或侧身竖起一侧鳍肢。",
-        "en": "Kua Sha, known for its large tail flukes visible during dives, often breaches out of the water or raises a single flipper vertically."
+        "zh": "跨鲨，常将体躯跃出水面。",
+        "en": "Kua Sha, often breaches out of the water."
       },
       "protectionLevel": {
         "cms": {

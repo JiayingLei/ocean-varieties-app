@@ -115,7 +115,7 @@
 }
 
 .level-text div, .china-level-text div {
-  font-family: "FZLanTing";
+  font-family: "FZLanTing", sans-serif;;
   font-size: 1.3vw;
   line-height: 1.2;
   white-space: pre-line; /* 处理换行符 */

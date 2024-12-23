@@ -31,13 +31,14 @@ const HomePage = () => {
   // 监听窗口滚动事件
   const handleScroll = () => {
     const sectionTwo = document.getElementById("section-two");
-    const sectionTwoPosition = sectionTwo.getBoundingClientRect();
-
-    // 判断 section-2 是否在可视区域中
-    if (sectionTwoPosition.top <= window.innerHeight && sectionTwoPosition.bottom >= 0) {
-      setShowSideBar(true); // 显示 SideBar
-    } else {
-      setShowSideBar(false); // 隐藏 SideBar
+    if (sectionTwo) {
+      const sectionTwoPosition = sectionTwo.getBoundingClientRect();
+      // 判断 section-two 是否在可视区域中
+      if (sectionTwoPosition.top <= window.innerHeight && sectionTwoPosition.bottom >= 0) {
+        setShowSideBar(true); // 显示 SideBar
+      } else {
+        setShowSideBar(false); // 隐藏 SideBar
+      }
     }
   };
 

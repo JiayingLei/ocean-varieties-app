@@ -9,6 +9,7 @@ const OceanCreature = ({ creature, onClick, isGrayedOut }) => {
         top: `${(creature.position.top / 11342) * 1050}vh`,
         left: `${(creature.position.left / 1920) * 100}vw`,
       }}
+      data-tooltip={creature.description.zh + "\n" + creature.description.en}
     >
       <img
         src={creature.image}
@@ -23,7 +24,6 @@ const OceanCreature = ({ creature, onClick, isGrayedOut }) => {
         }}
         onClick={() => onClick(creature.id)}
       />
-      <div className="tooltip">{creature.description.zh}</div>
     </div>
   );
 };

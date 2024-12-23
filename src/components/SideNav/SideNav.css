@@ -67,20 +67,16 @@
   font-size: 2.5vh;
   text-align: center; /* 水平居中文本 */
   visibility: hidden;
-  opacity: 0.8;
-  transition: opacity 0.2s;
   pointer-events: none;
-  font-family: "LQXianEr";
+  font-family: "LQXianEr", sans-serif;;
 }
-
-.nav-icon:hover::after {
-  visibility: visible;
-  opacity: 1;
-}
-
 @font-face {
   font-family: "LQXianEr";
   src: url("../../../public/fonts/LQXianEr.ttf");
   font-weight: normal;
   font-style: normal;
+}
+
+.nav-icon:hover::after {
+  visibility: visible;
 }

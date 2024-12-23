@@ -40,7 +40,7 @@
 }
 
 .reason-name .chinese, .reason-name .english {
-  font-family: "LQXianEr";
+  font-family: "LQXianEr", sans-serif;;
   color: #333333;
   font-size: 3vw;
   line-height: 1;

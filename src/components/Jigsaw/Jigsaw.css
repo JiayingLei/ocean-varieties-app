@@ -39,7 +39,7 @@
 
 .scientific-name {
   text-align: left;
-  font-family: "LQXianEr";
+  font-family: "LQXianEr", sans-serif;;
   color: #333333;
   font-size: 4vw;
   line-height: 0;
@@ -67,7 +67,7 @@
 }
 
 .species-distribution .chinese, .species-distribution .english {
-  font-family: "FZLanTing";
+  font-family: "FZLanTing", sans-serif;;
   font-size: 1.5vw;
   line-height: 1.2;
   white-space: pre-line; /* 处理换行符 */
