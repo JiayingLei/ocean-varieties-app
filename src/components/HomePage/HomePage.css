@@ -105,7 +105,17 @@
   text-align: center;
 }
 
-.bottom-text p {
-  font-size: 2em; 
-  margin: 10px 0;
+.bottom-chinese, .bottom-english{
+  font-family: "LQXianEr", sans-serif; 
+  color: #333333;
+  font-size: 3.2vw;
+  line-height: 1;
+  white-space: nowrap; /* 禁止换行 */
+  margin: 10px 0; /* 上下间距 */
+}
+@font-face {
+  font-family: "LQXianEr";
+  src: url("../../../public/fonts/LQXianEr.ttf");
+  font-weight: normal;
+  font-style: normal;
 }

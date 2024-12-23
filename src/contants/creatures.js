@@ -93,7 +93,7 @@ export const creatures = [
       id: 11,
       name: "海鰌",
       type: "兽部",
-      image: "/images/井鱼、海鰌、跨鲨-1.png",
+      image: "/images/海鰌.png",
       description: "海鰌，偏爱近海浅水区域，常靠近港口缓缓游动并在水面徘徊。",
       position: { left: 328, top: 2248 },
       size: { width: 969, height: 318 }, 
@@ -154,8 +154,8 @@ export const creatures = [
           "en": "Global whaling has drastically reduced whale populations. Each generation assumes the world they inhabit is the normal one."
         }
       },
-      "image": "/images/井鱼、海鰌、跨鲨-2.png",
-      "actualImage": "/actual-images/井鱼、海鰌、跨鲨-2.png",
+      "image": "/images/座头鲸.png",
+      "actualImage": "/actual-images/座头鲸.png",
       "position": { "left": 260, "top": 1470 },
       "size": { "width": 1095, "height": 426 },
     },
@@ -246,7 +246,7 @@ export const creatures = [
       id: 22,
       name: "云头鲨",
       type: "鳞部",
-      image: "/images/双髻鲨、云头鲨、黄昏鲨-1.png",
+      image: "/images/云头鲨.png",
       description: "云头鲨，通常被发现于近岸海洋水域以及近海深度80米（ 230英尺），包括大陆架和岛屿梯田。",
       position: { left: 1000, top: 5346.55, rotation: 73.28 },
       size: { width: 839.89, height: 419.95 }, 
@@ -255,7 +255,7 @@ export const creatures = [
       id: 23,
       name: "黄昏鲨",
       type: "鳞部",
-      image: "/images/双髻鲨、云头鲨、黄昏鲨-2.png",
+      image: "/images/黄昏鲨.png",
       description: "黄昏鲨，水深0~275米。",
       position: { left: 695, top: 6012 },
       size: { width: 619, height: 619 }, 
@@ -264,7 +264,7 @@ export const creatures = [
       id: 24,
       name: "双髻鲨",
       type: "鳞部",
-      image: "/images/双髻鲨、云头鲨、黄昏鲨.png",
+      image: "/images/双髻鲨.png",
       description: "双髻鲨，一般在浅于20米深处出没，但最深可达到200米。",
       position: { left: 495, top: 3410.3, rotation: -22.5 },
       size: { width: 675, height: 675 }, 
@@ -306,4 +306,3 @@ export const creatures = [
       size: { width: 593, height: 302 }, 
     }
   ];
-  

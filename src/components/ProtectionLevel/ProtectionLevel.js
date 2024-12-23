@@ -2,16 +2,14 @@ import React, { useState } from 'react';
 import './ProtectionLevel.css';
 
 const ProtectionLevel = ({ creature }) => {
-  // 独立的状态管理，用于控制哪个container的level-container显示
   const [activeContainer, setActiveContainer] = useState(null);
 
-  // 控制每个level-container的显示状态
+  // 控制每个 level-container 的显示状态
   const handleLevelContainerClick = (containerName) => {
-    // 如果点击的是已经展开的container，则关闭它，否则展开点击的container
     if (activeContainer === containerName) {
-      setActiveContainer(null);  // 如果点击的是当前展开的container，则关闭它
+      setActiveContainer(null);  
     } else {
-      setActiveContainer(containerName);  // 否则展开点击的container
+      setActiveContainer(containerName); 
     }
   };
 
