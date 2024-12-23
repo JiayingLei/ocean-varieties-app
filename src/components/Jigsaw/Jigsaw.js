@@ -69,24 +69,24 @@ export default function Jigsaw({ creature }) {
 
   return (
     <div className="jigsaw">
-    {/* 学名容器 */}
-    <div className="scientific-name-container">
-      <div className="back-button-0" onClick={() => navigate("/")}>
-        <img src="/detailspage/back-button.png" alt="Back" />
+      {/* 学名容器 */}
+      <div className="scientific-name-container">
+        <div className="back-button-0" onClick={() => navigate("/")}>
+          <img src="/detailspage/back-button.png" alt="Back" />
+        </div>
+        <p className="scientific-name">
+          {creature.name.zh}{creature.name.en} — {creature.scientificName.zh}{creature.scientificName.en}
+        </p>
       </div>
-      <p className="scientific-name">
-        {creature.name.zh}{creature.name.en} — {creature.scientificName.zh}{creature.scientificName.en}
-      </p>
-    </div>
 
-    {/* 介绍容器 */}
-    <div className="introduction-container">
-      <div className="species-distribution">
-        <p className="chinese">{creature.species.zh + "\n" + creature.distribution.zh}</p>
-        <p className="english">{creature.species.en + "\n" + creature.distribution.en}</p>
+      {/* 介绍容器 */}
+      <div className="introduction-container">
+        <div className="species-distribution">
+          <p className="chinese">{creature.species.zh + "\n" + creature.distribution.zh}</p>
+          <p className="english">{creature.species.en + "\n" + creature.distribution.en}</p>
+        </div>
+        <DemoPuzzle id="puzzle" creature={creature} />
       </div>
-      <DemoPuzzle id="puzzle" creature={creature} />
     </div>
-  </div>
   );
 }

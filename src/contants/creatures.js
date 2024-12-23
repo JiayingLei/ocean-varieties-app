@@ -126,19 +126,19 @@ export const creatures = [
         "en": "Kua Sha, known for its large tail flukes visible during dives, often breaches out of the water or raises a single flipper vertically."
       },
       "protectionLevel": {
-        "CMS": {
+        "cms": {
           "zh": "列入《保护野生动物迁徙物种公约》（CMS）附录Ⅰ。",
           "en": "Listed in Appendix I of the Convention on the Conservation of Migratory Species of Wild Animals (CMS)."
         },
-        "CITES": {
+        "cites": {
           "zh": "列入《濒临绝种野生动植物国际贸易公约》（CITES）附录Ⅰ。",
           "en": "Listed in Appendix I of the Convention on International Trade in Endangered Species of Wild Fauna and Flora (CITES)."
         },
-        "IUCN": {
+        "iucn": {
           "zh": "列入《世界自然保护联盟濒危物种红色名录》（The IUCN Red List）：无危物种（LC），2018年评估。",
           "en": "Listed as Least Concern (LC) on the IUCN Red List of Threatened Species (2018 assessment)."
         },
-        "CHINA": {
+        "china": {
           "zh": "列入《中国物种红色名录》：极危（CR）。\n列入《国家重点保护野生动物名录》：国家二级保护动物。\n列入《中国国家重点保护野生动物名录》一级。",
           "en": "Listed as Critically Endangered (CR) in the China Species Red List.\nIncluded in the National Key Protected Wild Animal List as a Class II protected species.\nListed in China's National Key Protected Wild Animal List as Class I."
         }
