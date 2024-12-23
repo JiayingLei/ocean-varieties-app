@@ -86,26 +86,18 @@ const DetailsPage = () => {
       <SideNav currentSection={currentSection} onSectionSelect={handleSectionSelect} />
       <div className="content">
         {sections.map((section, index) => (
-        <div
-          key={index}
-          ref={(el) => (sectionsRef.current[index] = el)}
-          className={`section ${currentSection === index ? 'active' : ''}`}
-        >
-          {/* 渲染父 Section 内容 */}
-          {(!section.subSections || currentSubSection === null) && (
-            <div className="section">
-              {section.content}
-            </div>
-          )}
+          <div
+            key={index}
+            ref={(el) => (sectionsRef.current[index] = el)}
+            className={`section ${currentSection === index ? 'active' : ''}`}
+          >
+            {/* 渲染父 Section 内容 */}
+            {(!section.subSections || currentSubSection === null) && section.content}
 
-          {/* 渲染子 Section 内容 */}
-          {section.subSections && currentSection === index && currentSubSection !== null && (
-            <div className="subsection">
-              {section.subSections[currentSubSection].content}
-            </div>
-          )}
-        </div>
-      ))}
+            {/* 渲染子 Section 内容 */}
+            {section.subSections && currentSection === index && currentSubSection !== null && section.subSections[currentSubSection].content}
+          </div>
+        ))}
       </div>
     </div>
   );
