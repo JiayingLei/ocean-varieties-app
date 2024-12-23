@@ -47,7 +47,7 @@
 }
 @font-face {
   font-family: "LQXianEr";
-  src: url("../../assets/fonts/LQXianEr.ttf");
+  src: url("../../../public/fonts/LQXianEr.ttf");
   font-weight: normal;
   font-style: normal;
 }
@@ -75,7 +75,7 @@
 }
 @font-face {
   font-family: "FZLanTing";
-  src: url("../../assets/fonts/FZLanTingHeiPro_GB18030.ttf");
+  src: url("../../../public/fonts/FZLanTingHeiPro_GB18030.ttf");
   font-weight: normal;
   font-style: normal;
 }
