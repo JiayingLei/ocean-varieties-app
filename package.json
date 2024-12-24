@@ -2,7 +2,7 @@
   "name": "ocean-variety-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "./",
+  "homepage": "https://jiayinglei.github.io/ocean-varieties-app",
   "dependencies": {
     "cra-template": "1.2.0",
     "headbreaker": "^3.0.0",
