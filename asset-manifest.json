@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ocean-varieties-app/static/css/main.b986c25a.css",
-    "main.js": "/ocean-varieties-app/static/js/main.f44ddf51.js",
+    "main.js": "/ocean-varieties-app/static/js/main.3b173f9f.js",
     "static/js/488.61e08bb0.chunk.js": "/ocean-varieties-app/static/js/488.61e08bb0.chunk.js",
     "static/media/FZLanTingHeiPro_GB18030.ttf": "/ocean-varieties-app/static/media/FZLanTingHeiPro_GB18030.d406a66ebf18e0ff8cb4.ttf",
     "static/media/LQXianEr.ttf": "/ocean-varieties-app/static/media/LQXianEr.47b1c7516db3a15da514.ttf",
@@ -12,11 +12,11 @@
     "static/media/Poppins-Light.ttf": "/ocean-varieties-app/static/media/Poppins-Light.27d899b25a1e5dc41462.ttf",
     "index.html": "/ocean-varieties-app/index.html",
     "main.b986c25a.css.map": "/ocean-varieties-app/static/css/main.b986c25a.css.map",
-    "main.f44ddf51.js.map": "/ocean-varieties-app/static/js/main.f44ddf51.js.map",
+    "main.3b173f9f.js.map": "/ocean-varieties-app/static/js/main.3b173f9f.js.map",
     "488.61e08bb0.chunk.js.map": "/ocean-varieties-app/static/js/488.61e08bb0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b986c25a.css",
-    "static/js/main.f44ddf51.js"
+    "static/js/main.3b173f9f.js"
   ]
 }
