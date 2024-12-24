@@ -5,7 +5,7 @@ import DetailsPage from './components/DetailsPage/DetailsPage';
 
 const App = () => {
   return (
-    <Router>  
+    <Router basename="/ocean-varieties-app">  
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/details/:id" element={<DetailsPage />} />
