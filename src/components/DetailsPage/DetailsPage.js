@@ -85,7 +85,7 @@ const DetailsPage = () => {
       </audio>
       {currentSection > 0 && (
         <div className="back-button" onClick={() => navigate("/")}>
-          <img src="/detailspage/back-button.png" alt="Back" />
+          <img src={`${process.env.PUBLIC_URL}/detailspage/back-button.png`} alt="Back" />
         </div>
       )}
       <SideNav currentSection={currentSection} onSectionSelect={handleSectionSelect} />

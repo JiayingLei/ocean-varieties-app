@@ -72,7 +72,7 @@ export default function Jigsaw({ creature }) {
       {/* 学名容器 */}
       <div className="scientific-name-container">
         <div className="back-button-0" onClick={() => navigate("/")}>
-          <img src="/detailspage/back-button.png" alt="Back" />
+          <img src={`${process.env.PUBLIC_URL}/detailspage/back-button.png`} alt="Back" />
         </div>
         <p className="scientific-name">
           {creature.name.zh}{creature.name.en} — {creature.scientificName.zh}{creature.scientificName.en}

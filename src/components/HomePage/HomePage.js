@@ -72,24 +72,24 @@ const HomePage = () => {
         onWheel={handleMouseWheel}
       >
         <img
-          src="/homepage/section-one/subtitle.png"
+          src={`${process.env.PUBLIC_URL}/homepage/section-one/subtitle.png`}
           alt="Subtitle"
           className="s1-subtitle"
         />
         <div className="s1-titles-container">
           <img
-            src="/homepage/section-one/title-1.png"
+            src={`${process.env.PUBLIC_URL}/homepage/section-one/title-1.png`}
             alt="Title 1"
             className="s1-title-1"
           />
           <img
-            src="/homepage/section-one/title-2.png"
+            src={`${process.env.PUBLIC_URL}/homepage/section-one/title-2.png`}
             alt="Title 2"
             className="s1-title-2"
           />
         </div>
         <img 
-          src="/homepage/section-one/arrow.png" 
+          src={`${process.env.PUBLIC_URL}/homepage/section-one/arrow.png`} 
           alt="Arrow" 
           className="scroll-indicator" 
           onClick={scrollToNextSection}
@@ -110,12 +110,12 @@ const HomePage = () => {
       >
         <div className="s2-titles-container">
           <img
-            src={"/homepage/section-two/title.png"} 
+            src={`${process.env.PUBLIC_URL}/homepage/section-two/title.png`}
             alt="Title" 
             className="s2-title" 
           />
           <img 
-            src={"/homepage/section-two/subtitle.png"} 
+            src={`${process.env.PUBLIC_URL}/homepage/section-two/subtitle.png`}
             alt="Subtitle" 
             className="s2-subtitle" 
           />

@@ -17,7 +17,7 @@ const ProtectionLevel = ({ creature }) => {
     <div className="protection-level">
       <div 
         className={`cms-container ${activeContainer === 'cms' ? 'active' : ''}`} 
-        style={{ backgroundImage: 'url("/detailspage/protection-level/waves-bg/wave-cms.png")' }}
+        style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/detailspage/protection-level/waves-bg/wave-cms.png)` }}
       >
         {activeContainer === 'cms' && (
           <div className="overlay"></div> /* 新增叠加背景层 */
@@ -30,7 +30,7 @@ const ProtectionLevel = ({ creature }) => {
             <>
               <div className="level-icon">
                 <img
-                  src={`/detailspage/protection-level/icons/icon-cms.png`}
+                  src={`${process.env.PUBLIC_URL}/detailspage/protection-level/icons/icon-cms.png`}
                   alt="icon"
                 />
               </div>
@@ -44,7 +44,7 @@ const ProtectionLevel = ({ creature }) => {
 
         <div 
           className={`cites-container ${activeContainer === 'cites' ? 'active' : ''}`} 
-          style={{ backgroundImage: 'url("/detailspage/protection-level/waves-bg/wave-cites.png")' }}
+          style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/detailspage/protection-level/waves-bg/wave-cites.png)` }}
         >
           {activeContainer === 'cites' && (
             <div className="overlay"></div> /* 新增叠加背景层 */
@@ -57,7 +57,7 @@ const ProtectionLevel = ({ creature }) => {
               <>
                 <div className="level-icon">
                   <img
-                    src={`/detailspage/protection-level/icons/icon-cites.png`}
+                    src={`${process.env.PUBLIC_URL}/detailspage/protection-level/icons/icon-cites.png`}
                     alt="icon"
                   />
                 </div>
@@ -70,7 +70,7 @@ const ProtectionLevel = ({ creature }) => {
           </div>
           <div 
             className={`iucn-container ${activeContainer === 'iucn' ? 'active' : ''}`}
-            style={{ backgroundImage: 'url("/detailspage/protection-level/waves-bg/wave-iucn.png")' }}
+            style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/detailspage/protection-level/waves-bg/wave-iucn.png)` }}
           >
             {activeContainer === 'iucn' && (
               <div className="overlay"></div> /* 新增叠加背景层 */
@@ -83,7 +83,7 @@ const ProtectionLevel = ({ creature }) => {
                 <>
                   <div className="level-icon">
                     <img
-                      src={`/detailspage/protection-level/icons/icon-iucn.png`}
+                      src={`${process.env.PUBLIC_URL}/detailspage/protection-level/icons/icon-iucn.png`}
                       alt="icon"
                     />
                   </div>
@@ -96,7 +96,7 @@ const ProtectionLevel = ({ creature }) => {
             </div>
             <div 
               className={`china-container ${activeContainer === 'china' ? 'active' : ''}`} 
-              style={{ backgroundImage: 'url("/detailspage/protection-level/waves-bg/wave-china.png")' }}
+              style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/detailspage/protection-level/waves-bg/wave-china.png)` }}
             >
               {activeContainer === 'china' && (
                 <div className="overlay"></div> /* 新增叠加背景层 */
@@ -109,7 +109,7 @@ const ProtectionLevel = ({ creature }) => {
                   <>
                     <div className="china-level-icon">
                       <img 
-                        src={`/detailspage/protection-level/icons/icon-china.png`} 
+                        src={`${process.env.PUBLIC_URL}/detailspage/protection-level/icons/icon-china.png`}
                         alt="china icon" 
                       />
                     </div>

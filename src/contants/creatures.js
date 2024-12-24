@@ -40,8 +40,8 @@ export const creatures = [
                 "en": "The Chinese herring is in critical danger, with a trend toward smaller sizes. Artificial breeding of Chinese herring has started to be promoted."
             }
         },
-        "image": "/images/𫚖鱼.png",
-        "actualImage": "/actual-images/𫚖鱼.png",
+        "image": `${process.env.PUBLIC_URL}/images/𫚖鱼.png`,
+        "actualImage": `${process.env.PUBLIC_URL}/actual-images/𫚖鱼.png`,
         "position": { "left": 719, "top": 2918 },
         "size": { "width": 421, "height": 421 }
     },
@@ -84,8 +84,8 @@ export const creatures = [
             "zh": "带鱼分布比较广，以西太平洋和印度洋最多，中国沿海各省均可见到，其中以东海产量最高。",
             "en": "Ribbonfish has a wide distribution, most notably in the Western Pacific and Indian Oceans. It can be found in all coastal provinces of China, with the highest production in the East China Sea."
         },
-        "image": "/images/带鱼.png",
-        "actualImage": "/actual-images/带鱼.png",
+        "image": `${process.env.PUBLIC_URL}/images/带鱼.png`,
+        "actualImage": `${process.env.PUBLIC_URL}/actual-images/带鱼.png`,
         "description": {
             "zh": "带鱼，一般栖息于大洋水域、深海、砂泥底、河口、近海沿岸，水深在60~100公尺间，也会游至深远350公尺，甚至更深之水域，产卵时则洄游至浅海水域。",
             "en": "Ribbonfish generally inhabits oceanic waters, deep seas, sandy-mud bottoms, estuaries, and nearshore areas, typically at depths between 60 to 100 meters, but can swim to depths of 350 meters or deeper. During spawning, they migrate to shallower waters."
@@ -144,8 +144,8 @@ export const creatures = [
             "zh": "瑇瑁，一般在海深18.3米以上的水域中活动，一生会在几片环境完全不同的栖息地生活。",
             "en": "The Hawksbill Turtle generally inhabits waters deeper than 18.3 meters and lives in several vastly different habitats throughout its life."
         },
-        "image": "/images/瑇瑁.png",
-        "actualImage": "/actual-images/瑇瑁.png",
+        "image": `${process.env.PUBLIC_URL}/images/瑇瑁.png`,
+        "actualImage": `${process.env.PUBLIC_URL}/actual-images/瑇瑁.png`,
         "position": { "left": 242, "top": 3633 },
         "size": { "width": 750, "height": 750 }
     },
@@ -196,8 +196,8 @@ export const creatures = [
             "zh": "棱皮龟在中国分布于广东、福建、江苏、辽宁、台湾、海南等附近的东海和南海海域，以及上海长江口外海域等地。",
             "en": "The Leatherback Turtle is found in Chinese waters around Guangdong, Fujian, Jiangsu, Liaoning, Taiwan, Hainan, and the East China Sea and South China Sea, as well as offshore areas near Shanghai's Yangtze River Estuary."
         },
-        "image": "/images/海和尚.png",
-        "actualImage": "/actual-images/海和尚.png",
+        "image": `${process.env.PUBLIC_URL}/images/海和尚.png`,
+        "actualImage": `${process.env.PUBLIC_URL}/actual-images/海和尚.png`,
         "description": {
             "zh": "海和尚，可以潜水到约1300米的深度，并且可以屏住呼吸长达85分钟。",
             "en": "The Leatherback Turtle can dive to depths of around 1300 meters and hold its breath for up to 85 minutes."
@@ -244,8 +244,8 @@ export const creatures = [
             "zh": "海马分布在大西洋、欧洲、太平洋、澳大利亚。",
             "en": "Seahorses are found in the Atlantic Ocean, Europe, the Pacific Ocean, and Australia."
         },
-        "image": "/images/海马.png",
-        "actualImage": "/actual-images/海马.png",
+        "image": `${process.env.PUBLIC_URL}/images/海马.png`,
+        "actualImage": `${process.env.PUBLIC_URL}/actual-images/海马.png`,
         "description": {
             "zh": "海马，生殖期间群体会向较浅的海域移动，寻找较合适的生产环境，其生存水深约10~30米之间。",
             "en": "Seahorses move to shallower waters during breeding season to find more suitable environments, with a typical depth range of 10-30 meters."
@@ -292,8 +292,8 @@ export const creatures = [
             "zh": "海蛇在中国分布于广西、广东、海南、台湾、福建、江苏、浙江、山东等地沿海。",
             "en": "Sea snakes are distributed along the coasts of Guangxi, Guangdong, Hainan, Taiwan, Fujian, Jiangsu, Zhejiang, and Shandong in China."
         },
-        "image": "/images/海蛇.png",
-        "actualImage": "/actual-images/海蛇.png",
+        "image": `${process.env.PUBLIC_URL}/images/海蛇.png`,
+        "actualImage": `${process.env.PUBLIC_URL}/actual-images/海蛇.png`,
         "description": {
             "zh": "海蛇，喜欢在大陆架和海岛周围的浅水中栖息，在水深超过100米的开阔海域中很少见。它们有的喜欢呆在沙底或泥底的混水中，有些却喜欢在珊瑚礁周围的清水里活动。",
             "en": "Sea snakes prefer to inhabit shallow waters around the continental shelf and islands, and are rarely seen in open waters deeper than 100 meters. Some prefer sandy or muddy bottoms, while others like to swim in clear waters around coral reefs."
@@ -348,8 +348,8 @@ export const creatures = [
             "zh": "海獭在中国分布于东北、华东、东南等大部分地区。",
             "en": "Otters are found in most parts of China, including the northeast, east, and southeast."
         },
-        "image": "/images/海獭.png",
-        "actualImage": "/actual-images/海獭.png",
+        "image": `${process.env.PUBLIC_URL}/images/海獭.png`,
+        "actualImage": `${process.env.PUBLIC_URL}/actual-images/海獭.png`,
         "description": {
             "zh": "海獭，傍水而居，栖于江河、湖泊、溪流、沿海淡水区域等地带，在青藏高原可分布至海拔4000米以上的河流中。",
             "en": "Otters live near water and inhabit rivers, lakes, streams, and coastal freshwater areas. They can be found in rivers above 4000 meters on the Tibetan Plateau."
@@ -396,8 +396,8 @@ export const creatures = [
             "zh": "现生的珊瑚礁主要分布在南北纬30度之间，热带和亚热带的浅水海域。",
             "en": "Living coral reefs are primarily found between latitudes 30°N and 30°S, in tropical and subtropical shallow seas."
         },
-        "image": "/images/海铁树.png",
-        "actualImage": "/actual-images/海铁树.png",
+        "image": `${process.env.PUBLIC_URL}/images/海铁树.png`,
+        "actualImage": `${process.env.PUBLIC_URL}/actual-images/海铁树.png`,
         "description": {
             "zh": "海铁树，栖息于水深15~20米的硬底上，或更深的珊瑚石和岩石上。",
             "en": "Ironwood coral lives on hard bottoms at depths of 15–20 meters, or deeper on coral stones and rocks."
@@ -438,8 +438,8 @@ export const creatures = [
             "zh": "沙蚕在中国福建、浙江、广东沿海有养殖。",
             "en": "The Echiura is farmed along the coasts of Fujian, Zhejiang, and Guangdong in China."
         },
-        "image": "/images/海蜈蚣.png",
-        "actualImage": "/actual-images/海蜈蚣.png",
+        "image": `${process.env.PUBLIC_URL}/images/海蜈蚣.png`,
+        "actualImage": `${process.env.PUBLIC_URL}/actual-images/海蜈蚣.png`,
         "description": {
             "zh": "海蜈蚣，多栖息于潮间带和潮下带(17～53m)软泥底。",
             "en": "The Sea Centipede mainly inhabits soft mud bottoms of the intertidal and subtidal zones (17–53m)."
@@ -494,8 +494,8 @@ export const creatures = [
             "zh": "原产地：中国、印度尼西亚、日本、马来西亚、菲律宾和越南。",
             "en": "Native to China, Indonesia, Japan, Malaysia, the Philippines, and Vietnam."
         },
-        "image": "/images/鲎.png",
-        "actualImage": "/actual-images/鲎.png",
+        "image": `${process.env.PUBLIC_URL}/images/鲎.png`,
+        "actualImage": `${process.env.PUBLIC_URL}/actual-images/鲎.png`,
         "description": {
             "zh": "鲎，生活在水深40米到潮间带之间的沙质海底。",
             "en": "The Horseshoe Crab lives on sandy sea floors between 40 meters depth and the intertidal zone."
@@ -550,8 +550,8 @@ export const creatures = [
             "zh": "露脊鲸在南北半球均有分布，在中国的南海、东海和黄海也能见到它们的身影。",
             "en": "Fin Whales are found in both the Northern and Southern Hemispheres, and can also be seen in the South China Sea, East China Sea, and Yellow Sea."
         },
-        "image": "/images/海鰌.png",
-        "actualImage": "/actual-images/海鰌.png",
+        "image": `${process.env.PUBLIC_URL}/images/海鰌.png`,
+        "actualImage": `${process.env.PUBLIC_URL}/actual-images/海鰌.png`,
         "description": {
             "zh": "海鰌，偏爱近海浅水区域，常靠近港口缓缓游动并在水面徘徊。",
             "en": "The Fin Whale prefers shallow coastal areas and often swims slowly near ports, lingering at the water's surface."
@@ -614,8 +614,8 @@ export const creatures = [
           "en": "Global whaling has drastically reduced whale populations. Each generation assumes the world they inhabit is the normal one."
         }
       },
-      "image": "/images/跨鲨.png",
-      "actualImage": "/actual-images/跨鲨.png",
+      "image": `${process.env.PUBLIC_URL}/images/跨鲨.png`,
+      "actualImage": `${process.env.PUBLIC_URL}/actual-images/跨鲨.png`,
       "position": { "left": 260, "top": 1470 },
       "size": { "width": 1095, "height": 426 },
     },
@@ -662,8 +662,8 @@ export const creatures = [
             "zh": "锯鳐一般栖息于热带及亚热带浅水区，有些物种的锯鳐完全栖息在河口或河流上游。",
             "en": "Sawsharks generally inhabit tropical and subtropical shallow waters, with some species residing exclusively in estuaries or upstream rivers."
         },
-        "image": "/images/锯鲨.png",
-        "actualImage": "/actual-images/锯鲨.png",
+        "image": `${process.env.PUBLIC_URL}/images/锯鲨.png`,
+        "actualImage": `${process.env.PUBLIC_URL}/actual-images/锯鲨.png`,
         "description": {
             "zh": "锯鲨，有些生活在近岸海区和江、河、湖泊的河口，栖息于水深不超过10米的浅水区域，有些进入江、河、湖泊等淡水环境中生活。",
             "en": "Some sawsharks live in nearshore marine areas and estuaries of rivers, lakes, and reservoirs, inhabiting shallow waters no deeper than 10 meters. Some species even enter freshwater environments."
@@ -722,8 +722,8 @@ export const creatures = [
             "zh": "花鳗鲡主要分布于太平洋、印度洋的中低纬度水域及其通海的河流。",
             "en": "Gymnothorax favagineus is mainly found in the mid- to low-latitude waters of the Pacific and Indian Oceans, as well as the rivers that connect to these seas."
         },
-        "image": "/images/鲈鳗.png",
-        "actualImage": "/actual-images/鲈鳗.png",
+        "image": `${process.env.PUBLIC_URL}/images/鲈鳗.png`,
+        "actualImage": `${process.env.PUBLIC_URL}/actual-images/鲈鳗.png`,
         "description": {
             "zh": "鲈鳗，产卵在水域中层，水深为300～500米，盐度35以上。",
             "en": "The moray eel spawns in mid-water layers, at depths of 300-500 meters, with a salinity above 35."
@@ -764,8 +764,8 @@ export const creatures = [
             "zh": "牡蛎呈世界性分布，在全世界约有一百余种，中国南北沿海地区约有二十余种。",
             "en": "Oysters have a global distribution, with over a hundred species worldwide, and about twenty species along the coasts of China."
         },
-        "image": "/images/牡蛎.png",
-        "actualImage": "/actual-images/牡蛎.png",
+        "image": `${process.env.PUBLIC_URL}/images/牡蛎.png`,
+        "actualImage": `${process.env.PUBLIC_URL}/actual-images/牡蛎.png`,
         "description": {
             "zh": "牡蛎，从半咸水到海水，从潮间带到低潮线以下10多米深的海底均有牡蛎的踪迹。",
             "en": "Oysters can be found in brackish to seawater, from the intertidal zone to depths of over 10 meters below the low tide line."
@@ -806,8 +806,8 @@ export const creatures = [
             "zh": "海鳃于世界分布，见于全世界热带及温带。",
             "en": "Sea gills are found worldwide, in both tropical and temperate regions."
         },
-        "image": "/images/泥翅.png",
-        "actualImage": "/actual-images/泥翅.png",
+        "image": `${process.env.PUBLIC_URL}/images/泥翅.png`,
+        "actualImage": `${process.env.PUBLIC_URL}/actual-images/泥翅.png`,
         "description": {
             "zh": "泥翅，见于由潮间带到水深6100米的海域。",
             "en": "Mud Wings are found from the intertidal zone to depths of 6100 meters in marine environments."
@@ -848,8 +848,8 @@ export const creatures = [
             "zh": "泥钉在中国分布于东南沿海，浙江、福建、广西、广东、海南岛。",
             "en": "Mud Nails are distributed along the southeastern coast of China, including Zhejiang, Fujian, Guangxi, Guangdong, and Hainan Island."
         },
-        "image": "/images/泥钉.png",
-        "actualImage": "/actual-images/泥钉.png",
+        "image": `${process.env.PUBLIC_URL}/images/泥钉.png`,
+        "actualImage": `${process.env.PUBLIC_URL}/actual-images/泥钉.png`,
         "description": {
             "zh": "泥钉，多栖息在高潮区和潮上带盐碱性草类丛生的泥砂中。",
             "en": "Mud Nails are often found in muddy sands in the high tide zone and in the brackish grasslands of the intertidal zone."
@@ -890,8 +890,8 @@ export const creatures = [
             "zh": "主产于广东阳江、惠阳、宝安、海丰，辽宁大连、旅顺、庄河等地。",
             "en": "Mainly produced in Yangjiang, Huiyang, Bao'an, Haifeng in Guangdong, and Dalian, Lüshun, and Zhuanghe in Liaoning."
         },
-        "image": "/images/七里香.png",
-        "actualImage": "/actual-images/七里香.png",
+        "image": `${process.env.PUBLIC_URL}/images/七里香.png`,
+        "actualImage": `${process.env.PUBLIC_URL}/actual-images/七里香.png`,
         "description": {
             "zh": "七里香，对环境条件的要求较严格，水温需在12~23℃之间，水深不得超过50米，但其活动范围常常在水下的8~12米处。",
             "en": "Seven Miles Fragrance has strict environmental requirements, with water temperature between 12-23°C, and depth not exceeding 50 meters. However, its activity range is often between 8-12 meters underwater."
@@ -946,8 +946,8 @@ export const creatures = [
             "zh": "儒艮主要分布在南北纬15°之间的热带和亚热带港湾及浅滩中。",
             "en": "Dugongs are primarily found in tropical and subtropical bays and shallow waters between 15° north and south latitude."
         },
-        "image": "/images/人鱼.png",
-        "actualImage": "/actual-images/人鱼.png",
+        "image": `${process.env.PUBLIC_URL}/images/人鱼.png`,
+        "actualImage": `${process.env.PUBLIC_URL}/actual-images/人鱼.png`,
         "description": {
             "zh": "人鱼，饱食后通常潜入30~40米的海底，仅偶尔出水换气。",
             "en": "Manatees usually dive to depths of 30-40 meters after feeding, surfacing only occasionally for air."
@@ -994,8 +994,8 @@ export const creatures = [
             "zh": "分布于西北太平洋区，包括中国、日本、韩国、越南沿海；在中国分布于黄海南部、东海。",
             "en": "Distributed in the Northwestern Pacific region, including the coasts of China, Japan, South Korea, and Vietnam; in China, it is found in the southern part of the Yellow Sea and the East China Sea."
         },
-        "image": "/images/石首鱼.png",
-        "actualImage": "/actual-images/石首鱼.png",
+        "image": `${process.env.PUBLIC_URL}/images/石首鱼.png`,
+        "actualImage": `${process.env.PUBLIC_URL}/actual-images/石首鱼.png`,
         "description": {
             "zh": "石首鱼，栖息于水深60米以内的软泥或泥沙底质海域。",
             "en": "The stonehead fish inhabits soft mud or sandy bottom marine areas at depths of up to 60 meters."
@@ -1046,8 +1046,8 @@ export const creatures = [
             "zh": "鲥分布于中国黄海、东海、南海沿岸和珠江、钱塘江、长江等水域。",
             "en": "Shad is found along the coasts of the Yellow Sea, East China Sea, South China Sea, and in waters like the Pearl River, Qiantang River, and Yangtze River."
         },
-        "image": "/images/鲥鱼.png",
-        "actualImage": "/actual-images/鲥鱼.png",
+        "image": `${process.env.PUBLIC_URL}/images/鲥鱼.png`,
+        "actualImage": `${process.env.PUBLIC_URL}/actual-images/鲥鱼.png`,
         "description": {
             "zh": "鲥鱼，一般栖息在水深30~200米的岩礁地带。",
             "en": "Shad typically inhabits rocky reef areas at depths of 30 to 200 meters."
@@ -1098,8 +1098,8 @@ export const creatures = [
             "zh": "分布于热带、亚热带和温带各海区。",
             "en": "Distributed in tropical, subtropical, and temperate seas."
         },
-        "image": "/images/云头鲨.png",
-        "actualImage": "/actual-images/云头鲨.png",
+        "image": `${process.env.PUBLIC_URL}/images/云头鲨.png`,
+        "actualImage": `${process.env.PUBLIC_URL}/actual-images/云头鲨.png`,
         "description": {
             "zh": "云头鲨，通常被发现于近岸海洋水域以及近海深度80米（230英尺），包括大陆架和岛屿梯田。",
             "en": "Clouded shark is typically found in nearshore marine waters at depths of up to 80 meters (230 feet), including continental shelves and island terraces."
@@ -1154,8 +1154,8 @@ export const creatures = [
             "zh": "分布于热带、亚热带和温带各海区。",
             "en": "Distributed in tropical, subtropical, and temperate sea areas."
         },
-        "image": "/images/黄昏鲨.png",
-        "actualImage": "/actual-images/黄昏鲨.png",
+        "image": `${process.env.PUBLIC_URL}/images/黄昏鲨.png`,
+        "actualImage": `${process.env.PUBLIC_URL}/actual-images/黄昏鲨.png`,
         "description": {
             "zh": "黄昏鲨，水深0~275米。",
             "en": "Dusk Shark, found at depths of 0-275 meters."
@@ -1206,8 +1206,8 @@ export const creatures = [
             "zh": "分布于热带、亚热带和温带各海区。",
             "en": "Distributed in tropical, subtropical, and temperate sea areas."
         },
-        "image": "/images/双髻鲨.png",
-        "actualImage": "/actual-images/双髻鲨.png",
+        "image": `${process.env.PUBLIC_URL}/images/双髻鲨.png`,
+        "actualImage": `${process.env.PUBLIC_URL}/actual-images/双髻鲨.png`,
         "description": {
             "zh": "双髻鲨，一般在浅于20米深处出没，但最深可达到200米。",
             "en": "Hammerhead sharks are usually found in waters shallower than 20 meters, but can reach depths of up to 200 meters."
@@ -1252,8 +1252,8 @@ export const creatures = [
             "zh": "世界各地均有分布。",
             "en": "Found worldwide."
         },
-        "image": "/images/水沫鱼.png",
-        "actualImage": "/actual-images/水沫鱼.png",
+        "image": `${process.env.PUBLIC_URL}/images/水沫鱼.png`,
+        "actualImage": `${process.env.PUBLIC_URL}/actual-images/水沫鱼.png`,
         "description": {
             "zh": "水沫鱼，在大洋随洋流长距离漂游。",
             "en": "Foam fish drift long distances in the ocean's currents."
@@ -1298,8 +1298,8 @@ export const creatures = [
           "zh": "分布于中国、菲律宾、朝鲜半岛（西侧和南侧）、日本（九州岛西北侧的福冈、佐贺及有明湾）。",
           "en": "Distributed in China, the Philippines, the Korean Peninsula (west and south sides), and Japan (northwest side of Kyushu Island in Fukuoka, Saga, and Ariake Bay)."
         },
-        "image": "/images/四腮鲈.png",
-        "actualImage": "/actual-images/四腮鲈.png",
+        "image": `${process.env.PUBLIC_URL}/images/四腮鲈.png`,
+        "actualImage": `${process.env.PUBLIC_URL}/actual-images/四腮鲈.png`,
         "description": {
           "zh": "四腮鲈，栖息于浅海、河口和淡水的江河湖泊等多种水域（水深0~25米）。",
           "en": "The Four-gill Bass inhabits shallow seas, estuaries, and freshwater rivers and lakes at depths of 0-25 meters."
@@ -1340,8 +1340,8 @@ export const creatures = [
           "zh": "石磺广泛分布于印度——太平洋沿岸的河口海域，在中国则多分布于东海和南海。",
           "en": "Cerithidea is widely distributed along the estuarine coasts of the Indo-Pacific, and in China, it is mainly found in the East China Sea and the South China Sea."
         },
-        "image": "/images/土鳖.png",
-        "actualImage": "/actual-images/土鳖.png",
+        "image": `${process.env.PUBLIC_URL}/images/土鳖.png`,
+        "actualImage": `${process.env.PUBLIC_URL}/actual-images/土鳖.png`,
         "description": {
           "zh": "土鳖，常栖息于河口性沿岸带的岩石、泥滩、芦苇丛和红树林的沼泽地中。",
           "en": "The Mudflat Snail often inhabits rocky, muddy shores, reed beds, and mangrove swamps in the estuarine coastal zones."
@@ -1392,8 +1392,8 @@ export const creatures = [
           "zh": "斑海豹在中国主要分布于渤海和黄海，偶见于南海。",
           "en": "The spotted seal is mainly distributed in the Bohai Sea and Yellow Sea in China, occasionally found in the South China Sea."
         },
-        "image": "/images/腽肭脐.png",
-        "actualImage": "/actual-images/腽肭脐.png",
+        "image": `${process.env.PUBLIC_URL}/images/腽肭脐.png`,
+        "actualImage": `${process.env.PUBLIC_URL}/actual-images/腽肭脐.png`,
         "description": {
           "zh": "腽肭脐，栖息的水深主要在20~40米之间。",
           "en": "The spotted seal inhabits waters primarily at depths of 20-40 meters."

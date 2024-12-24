@@ -18,10 +18,10 @@ const SideNav = ({ currentSection, onSectionSelect }) => {
           onClick={() => handleIconClick(0)}
           data-tooltip={"拼图\n Jigsaw"}
         >
-          <img src="/detailspage/icons/icon-1.png" alt="Icon 1" />
+          <img src={`${process.env.PUBLIC_URL}/detailspage/icons/icon-1.png`} alt="Icon 1" />
         </div>
         <div className="nav-line">
-          <img src="/detailspage/icons/icon-line.png" alt="Line" />
+          <img src={`${process.env.PUBLIC_URL}/detailspage/icons/icon-line.png`} alt="Line" />
         </div>
         {/* Icon 2 */}
         <div
@@ -29,10 +29,10 @@ const SideNav = ({ currentSection, onSectionSelect }) => {
           onClick={() => handleIconClick(1)}
           data-tooltip={"保护级别\n Protection Level"}
         >
-          <img src="/detailspage/icons/icon-2.png" alt="Icon 2" />
+          <img src={`${process.env.PUBLIC_URL}/detailspage/icons/icon-2.png`} alt="Icon 2" />
         </div>
         <div className="nav-line">
-          <img src="/detailspage/icons/icon-line.png" alt="Line" />
+          <img src={`${process.env.PUBLIC_URL}/detailspage/icons/icon-line.png`} alt="Line" />
         </div>
         {/* Icon 3 (Shared by section 3 and 3A) */}
         <div
@@ -40,10 +40,10 @@ const SideNav = ({ currentSection, onSectionSelect }) => {
           onClick={() => handleIconClick(2)} 
           data-tooltip={"濒危原因\n Endangerment Reasons"}
         >
-          <img src="/detailspage/icons/icon-3.png" alt="Icon 3 & 3A" />
+          <img src={`${process.env.PUBLIC_URL}/detailspage/icons/icon-3.png`} alt="Icon 3 & 3A" />
         </div>
         <div className="nav-line">
-          <img src="/detailspage/icons/icon-line.png" alt="Line" />
+          <img src={`${process.env.PUBLIC_URL}/detailspage/icons/icon-line.png`} alt="Line" />
         </div>
         {/* Icon 4 */}
         <div
@@ -51,7 +51,7 @@ const SideNav = ({ currentSection, onSectionSelect }) => {
           onClick={() => handleIconClick(3)}
           data-tooltip={"实际图像\n Actual Image"}
         >
-          <img src="/detailspage/icons/icon-4.png" alt="Icon 4" />
+          <img src={`${process.env.PUBLIC_URL}/detailspage/icons/icon-4.png`} alt="Icon 4" />
         </div>
       </div>
     </div>
