@@ -15,9 +15,9 @@ function DemoPuzzle({ id, creature }) {
 
     creatureImage.onload = () => {
       const keyboard = new headbreaker.Canvas(puzzle.id, {
-        width: 900,
-        height: 400,
-        pieceSize: 300 / endangerment,
+        width: 1000,
+        height: 500,
+        pieceSize: 320 / endangerment,
         image: creatureImage,
         strokeWidth: 2.5, 
         strokeColor: '#F0F0F0',
@@ -35,7 +35,7 @@ function DemoPuzzle({ id, creature }) {
 
       // Make canvas focusable and listen to ctrl and shift keys
       keyboard.registerKeyboardGestures();
-      // keyboard.shuffle(0.7); // TODO: 待更改打乱规则
+      keyboard.shuffle(0.7); // TODO: 待更改打乱规则
       keyboard.draw();
 
       keyboard.onConnect((_piece, figure, _target, targetFigure) => {

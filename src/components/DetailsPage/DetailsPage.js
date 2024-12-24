@@ -78,6 +78,11 @@ const DetailsPage = () => {
 
   return (
     <div className="details-page" onWheel={handleScroll}>
+      {/* 添加背景音乐 */}
+      <audio autoPlay loop>
+        <source src="/background-music.mp3" type="audio/mp3" />
+        Your browser does not support the audio element.
+      </audio>
       {currentSection > 0 && (
         <div className="back-button" onClick={() => navigate("/")}>
           <img src="/detailspage/back-button.png" alt="Back" />

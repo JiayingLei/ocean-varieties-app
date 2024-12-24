@@ -14,8 +14,8 @@ export const EndangerReasons = ({ creature }) => {
           opacity: 0.3,  
           position: 'absolute',
           top: '10%',
-          bottom: '10%',
-          left: '50%', 
+          bottom: '0',
+          left: '40%', 
           right: 0,
         }}
       />

@@ -33,6 +33,7 @@
   max-width: 22.65vw; 
   max-height: 40.3vh; 
   object-fit: cover; /* 图片适应容器 */
+  border: 2px solid #333333;
 }
 
 .reason-name {

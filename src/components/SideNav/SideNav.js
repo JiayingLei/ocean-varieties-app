@@ -14,7 +14,7 @@ const SideNav = ({ currentSection, onSectionSelect }) => {
       <div className="nav-icon-group">
         {/* Icon 1 */}
         <div
-          className={`nav-icon ${currentSection === 0 ? 'active' : ''}`}
+          className={`nav-icon-1 ${currentSection === 0 ? 'active' : ''}`}
           onClick={() => handleIconClick(0)}
           data-tooltip={"拼图\n Jigsaw"}
         >
@@ -25,7 +25,7 @@ const SideNav = ({ currentSection, onSectionSelect }) => {
         </div>
         {/* Icon 2 */}
         <div
-          className={`nav-icon ${currentSection === 1 ? 'active' : ''}`}
+          className={`nav-icon-2 ${currentSection === 1 ? 'active' : ''}`}
           onClick={() => handleIconClick(1)}
           data-tooltip={"保护级别\n Protection Level"}
         >
@@ -36,7 +36,7 @@ const SideNav = ({ currentSection, onSectionSelect }) => {
         </div>
         {/* Icon 3 (Shared by section 3 and 3A) */}
         <div
-          className={`nav-icon ${currentSection === 2 ? 'active' : ''}`}
+          className={`nav-icon-3 ${currentSection === 2 ? 'active' : ''}`}
           onClick={() => handleIconClick(2)} 
           data-tooltip={"濒危原因\n Endangerment Reasons"}
         >
@@ -47,7 +47,7 @@ const SideNav = ({ currentSection, onSectionSelect }) => {
         </div>
         {/* Icon 4 */}
         <div
-          className={`nav-icon ${currentSection === 3 ? 'active' : ''}`}
+          className={`nav-icon-4 ${currentSection === 3 ? 'active' : ''}`}
           onClick={() => handleIconClick(3)}
           data-tooltip={"实际图像\n Actual Image"}
         >

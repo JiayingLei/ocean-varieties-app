@@ -53,6 +53,12 @@ const HomePage = () => {
 
   return (
     <div className="home-page">
+      {/* 添加背景音乐 */}
+      <audio autoPlay loop>
+        <source src="/background-music.mp3" type="audio/mp3" />
+        Your browser does not support the audio element.
+      </audio>
+
       {/* Section 1 */}
       <section
         className="section-one"
