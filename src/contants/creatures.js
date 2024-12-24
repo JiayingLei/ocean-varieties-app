@@ -109,7 +109,7 @@ export const creatures = [
         },
         "species": {
             "zh": "龟鳖目 | 海龟科 | 玳瑁属 | 爬行动物",
-            "en": "Order: Testudines | Family: Cheloniidae | Genus: Eretmochelys | Reptiles"
+            "en": "Testudines | Cheloniidae | Eretmochelys | Reptiles"
         },
         "protectionLevel": {
             "cites": {
@@ -165,7 +165,7 @@ export const creatures = [
         },
         "species": {
             "zh": "龟鳖目 | 棱皮龟科 | 棱皮龟属 | 爬行动物",
-            "en": "Order: Testudines | Family: Dermochelyidae | Genus: Dermochelys | Reptiles"
+            "en": "Testudines | Dermochelyidae | Dermochelys | Reptiles"
         },
         "protectionLevel": {
             "iucn": {
@@ -221,7 +221,7 @@ export const creatures = [
         },
         "species": {
             "zh": "海龙目 | 海龙科 | 海马属 | 暖海生小型鱼类统称",
-            "en": "Order Syngnathiformes | Family Syngnathidae | Genus Hippocampus | A general term for small warm-water fish"
+            "en": "Syngnathiformes | Syngnathidae | Hippocampus | A general term for small warm-water fish"
         },
         "protectionLevel": {
             "iucn": {
@@ -269,7 +269,7 @@ export const creatures = [
         },
         "species": {
             "zh": "蛇目 | 眼镜蛇科 | 海蛇亚科 | 海蛇动物统称",
-            "en": "Order Serpentes | Family Elapidae | Subfamily Hydrophiinae | A general term for sea snakes"
+            "en": "Serpentes | Elapidae | Hydrophiinae | A general term for sea snakes"
         },
         "protectionLevel": {
             "china": {
@@ -373,7 +373,7 @@ export const creatures = [
         },
         "species": {
             "zh": "珊瑚纲 | 柳珊瑚目 | 木珊瑚科",
-            "en": "Class Anthozoa | Order Gorgonacea | Family Gorgoniidae"
+            "en": "Anthozoa | Gorgonacea | Gorgoniidae"
         },
         "protectionLevel": {
             "cites": {
@@ -519,7 +519,7 @@ export const creatures = [
         },
         "species": {
             "zh": "偶蹄目 | 露脊鲸科 | 真露脊鲸 | 哺乳动物",
-            "en": "Order: Artiodactyla | Family: Balaenopteridae | Species: Fin Whale | Mammal"
+            "en": "Artiodactyla | Balaenopteridae | Fin Whale | Mammal"
         },
         "protectionLevel": {
             "cms": {
@@ -563,11 +563,11 @@ export const creatures = [
       "id": 12,
       "name": {
         "zh": "跨鲨",
-        "en": "Kua Sha"
+        "en": "Humpback Whale"
       },
       "scientificName": {
         "zh": "座头鲸",
-        "en": "Humpback Whale"
+        "en": "Megaptera novaeangliae"
       },
       "type": {
         "zh": "兽部",
@@ -583,7 +583,7 @@ export const creatures = [
       },
       "description": {
         "zh": "跨鲨，常将体躯跃出水面。",
-        "en": "Kua Sha, often breaches out of the water."
+        "en": "Humpback Whale, often breaches out of the water."
       },
       "protectionLevel": {
         "cms": {
@@ -635,7 +635,7 @@ export const creatures = [
         },
         "species": {
             "zh": "锯鳐目 | 锯鳐科 | 锯鳐属 | 软骨鱼类",
-            "en": "Order Pristiformes | Family Pristiophoridae | Genus Pristiophorus | Cartilaginous fish"
+            "en": "Pristiformes | Pristiophoridae | Pristiophorus | Cartilaginous fish"
         },
         "protectionLevel": {
             "cites": {
@@ -687,7 +687,7 @@ export const creatures = [
         },
         "species": {
             "zh": "鳗鲡目 | 鳗鲡科 | 鳗鲡属 | 鱼类",
-            "en": "Order Anguilliformes | Family Muraenidae | Genus Gymnothorax | Fish"
+            "en": "Anguilliformes | Muraenidae | Gymnothorax | Fish"
         },
         "protectionLevel": {
             "cms": {
@@ -747,7 +747,7 @@ export const creatures = [
         },
         "species": {
             "zh": "双壳纲 | 珍珠贝目 | 牡蛎科 | 软体动物",
-            "en": "Class Bivalvia | Order Ostreoida | Family Ostreidae | Mollusca"
+            "en": "Bivalvia | Ostreoida | Ostreidae | Mollusca"
         },
         "endangerment": {
             "level": 3,
@@ -789,7 +789,7 @@ export const creatures = [
         },
         "species": {
             "zh": "珊瑚纲 | 海鸡冠亚纲 | 八射珊瑚目 | 海笔",
-            "en": "Class Anthozoa | Subclass Octocorallia | Order Alcyonacea | Genus Pennatulacea"
+            "en": "Anthozoa | Octocorallia | Alcyonacea | Pennatulacea"
         },
         "endangerment": {
             "level": 2,
@@ -831,7 +831,7 @@ export const creatures = [
         },
         "species": {
             "zh": "革囊星虫目 | 革囊星虫科 | 革囊星虫属 | 昆虫",
-            "en": "Leather Sac Starworm Order | Leather Sac Starworm Family | Leather Sac Starworm Genus | Insects"
+            "en": "Leather Sac Starworm | Leather Sac Starworm | Leather Sac Starworm | Insects"
         },
         "endangerment": {
             "level": 2,
@@ -873,7 +873,7 @@ export const creatures = [
         },
         "species": {
             "zh": "刺鱼目 | 海龙科 | 海龙属 | 小型海洋鱼类",
-            "en": "Order Syngnathiformes | Family Syngnathidae | Genus Hippocampus | Small Marine Fish"
+            "en": "Syngnathiformes | Syngnathidae | Hippocampus | Small Marine Fish"
         },
         "endangerment": {
             "level": 2,
@@ -915,7 +915,7 @@ export const creatures = [
         },
         "species": {
             "zh": "海牛目 | 儒艮科 | 儒艮属 | 哺乳动物",
-            "en": "Order Sirenia | Family Dugongidae | Genus Dugong | Mammal"
+            "en": "Sirenia | Dugongidae | Dugong | Mammal"
         },
         "protectionLevel": { 
             "cites": {
@@ -971,7 +971,7 @@ export const creatures = [
         },
         "species": {
             "zh": "鲈形目 | 石首鱼科 | 黄鱼属 | 鱼类",
-            "en": "Order Perciformes | Family Sciaenidae | Genus Pseudosciaena | Fish"
+            "en": "Perciformes | Sciaenidae | Pseudosciaena | Fish"
         },
         "protectionLevel": { 
             "iucn": {
@@ -1071,7 +1071,7 @@ export const creatures = [
         },
         "species": {
             "zh": "真鲨目 | 双髻鲨科 | 双髻鲨属 | 鱼类",
-            "en": "Order: Carcharhiniformes | Family: Sphyrnidae | Genus: Sphyrna | Fish"
+            "en": "Carcharhiniformes | Sphyrnidae | Sphyrna | Fish"
         },
         "protectionLevel": {
             "cites": {
@@ -1123,7 +1123,7 @@ export const creatures = [
         },
         "species": {
             "zh": "真鲨目 | 双髻鲨科 | 双髻鲨属 | 鱼类",
-            "en": "Order: Carcharhiniformes | Family: Sphyrnidae | Genus: Sphyrna | Fish"
+            "en": "Carcharhiniformes | Sphyrnidae | Sphyrna | Fish"
         },
         "protectionLevel": {
             "cms": {
@@ -1179,7 +1179,7 @@ export const creatures = [
         },
         "species": {
             "zh": "真鲨目 | 双髻鲨科 | 双髻鲨属 | 鱼类",
-            "en": "Order: Carcharhiniformes | Family: Sphyrnidae | Genus: Sphyrna | Fish"
+            "en": "Carcharhiniformes | Sphyrnidae | Sphyrna | Fish"
         },
         "protectionLevel": {
             "cites": {
@@ -1231,7 +1231,7 @@ export const creatures = [
         },
         "species": {
             "zh": "鳗鲡目 | 鳗鲡科 | 鳗鲡属 | 鱼类",
-            "en": "Order: Anguilliformes | Family: Anguillidae | Genus: Anguilla | Fish"
+            "en": "Anguilliformes | Anguillidae | Anguilla | Fish"
         },
         "protectionLevel": {
             "zh": "世界自然保护联盟将日本鳗鲡归为“濒危灭绝种1B类”。",
