@@ -1,4 +1,4 @@
-const endangerReasons = [
+export const endangerReasons = [
   {
     id: 1,
     zh: "保护力度低",  // 中文名
@@ -78,5 +78,3 @@ const endangerReasons = [
     image: `${process.env.PUBLIC_URL}/detailspage/endanger-reasons/填海造陆.png`,
   },
 ];
-
-export default endangerReasons;

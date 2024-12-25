@@ -64,7 +64,7 @@ const HomePage = () => {
         className="section-one"
         id="section-one"
         style={{
-          backgroundImage: "url('/homepage/section-one/background.png')",
+          backgroundImage: `url('${process.env.PUBLIC_URL}/homepage/section-one/background.png')`,
           backgroundSize: "100% 100%",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
@@ -102,7 +102,7 @@ const HomePage = () => {
         className="section-two"
         id="section-two"
         style={{
-          backgroundImage: "url('/homepage/section-two/background.png')",
+          backgroundImage: `url('${process.env.PUBLIC_URL}/homepage/section-two/background.png')`,
           backgroundSize: "100% 100%",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",

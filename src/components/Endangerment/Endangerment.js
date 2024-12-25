@@ -1,6 +1,6 @@
 import React from 'react';
-import "./Endangerment.css";
-import endangerReasons from '../../contants/endangerReasons';  
+import "./Endangerment.css"; 
+import {endangerReasons} from '../../contants/endangerReasons';  
 
 export const EndangerReasons = ({ creature }) => {
   return (

@@ -24,7 +24,7 @@ const SideBar = ({ onTypeSelect }) => {
     <div 
       className={`side-bar ${isOpen ? "open" : ""}`}
       style={{
-        backgroundImage: "url('/homepage/section-two/side-bar-bg.png')",
+        backgroundImage: `url('${process.env.PUBLIC_URL}/homepage/section-two/side-bar-bg.png')`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
