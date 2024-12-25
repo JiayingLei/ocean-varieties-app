@@ -9,7 +9,7 @@ function DemoPuzzle({ id, creature }) {
 
   useEffect(() => {
     const puzzle = puzzleRef.current;
-    const audio = new Audio('/detailspage/connect.wav');
+    const audio = new Audio(`${process.env.PUBLIC_URL}/detailspage/connect.wav`);
     const creatureImage = new Image();
     creatureImage.src = creature.image;
 

@@ -80,7 +80,7 @@ const DetailsPage = () => {
     <div className="details-page" onWheel={handleScroll}>
       {/* 添加背景音乐 */}
       <audio autoPlay loop>
-        <source src="/background-music.mp3" type="audio/mp3" />
+        <source src={`${process.env.PUBLIC_URL}/background-music.mp3`} type="audio/mp3" />
         Your browser does not support the audio element.
       </audio>
       {currentSection > 0 && (
