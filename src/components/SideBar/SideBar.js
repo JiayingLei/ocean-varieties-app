@@ -24,7 +24,7 @@ const SideBar = ({ onTypeSelect }) => {
     <div 
       className={`side-bar ${isOpen ? "open" : ""}`}
       style={{
-        backgroundImage: `url('${process.env.PUBLIC_URL}/homepage/section-two/side-bar-bg.png')`,
+        backgroundImage: `url('${process.env.PUBLIC_URL}/homepage/section-six/side-bar-bg.png')`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
@@ -39,10 +39,10 @@ const SideBar = ({ onTypeSelect }) => {
           style={{ opacity: selectedIcon === "介部" ? 1 : 0.5 }}
           data-tooltip="介部"
         >
-          <img src={`${process.env.PUBLIC_URL}/homepage/section-two/icons/icon-介.png`} alt="Icon 介部" />
+          <img src={`${process.env.PUBLIC_URL}/homepage/section-six/icons/icon-介.png`} alt="Icon 介部" />
         </div>
         <div className="line">
-          <img src={`${process.env.PUBLIC_URL}/homepage/section-two/icons/icon-line.png`} alt="Line" />
+          <img src={`${process.env.PUBLIC_URL}/homepage/section-six/icons/icon-line.png`} alt="Line" />
         </div>
         <div 
           className="icon" 
@@ -50,10 +50,10 @@ const SideBar = ({ onTypeSelect }) => {
           style={{ opacity: selectedIcon === "鳞部" ? 1 : 0.5 }} 
           data-tooltip="鳞部"
         >
-          <img src={`${process.env.PUBLIC_URL}/homepage/section-two/icons/icon-鳞.png`} alt="Icon 鳞部" />
+          <img src={`${process.env.PUBLIC_URL}/homepage/section-six/icons/icon-鳞.png`} alt="Icon 鳞部" />
         </div>
         <div className="line">
-          <img src={`${process.env.PUBLIC_URL}/homepage/section-two/icons/icon-line.png`} alt="Line" />
+          <img src={`${process.env.PUBLIC_URL}/homepage/section-six/icons/icon-line.png`} alt="Line" />
         </div>
         <div 
           className="icon" 
@@ -61,10 +61,10 @@ const SideBar = ({ onTypeSelect }) => {
           style={{ opacity: selectedIcon === "兽部" ? 1 : 0.5 }} 
           data-tooltip="兽部"
         >
-          <img src={`${process.env.PUBLIC_URL}/homepage/section-two/icons/icon-兽.png`} alt="Icon 兽部" />
+          <img src={`${process.env.PUBLIC_URL}/homepage/section-six/icons/icon-兽.png`} alt="Icon 兽部" />
         </div>
         <div className="line">
-          <img src={`${process.env.PUBLIC_URL}/homepage/section-two/icons/icon-line.png`} alt="Line" />
+          <img src={`${process.env.PUBLIC_URL}/homepage/section-six/icons/icon-line.png`} alt="Line" />
         </div>
         <div 
           className="icon" 
@@ -72,7 +72,7 @@ const SideBar = ({ onTypeSelect }) => {
           style={{ opacity: selectedIcon === "虫部" ? 1 : 0.5 }} 
           data-tooltip="虫部"
         >
-          <img src={`${process.env.PUBLIC_URL}/homepage/section-two/icons/icon-虫.png`} alt="Icon 虫部" />
+          <img src={`${process.env.PUBLIC_URL}/homepage/section-six/icons/icon-虫.png`} alt="Icon 虫部" />
         </div>
       </div>
     </div>
