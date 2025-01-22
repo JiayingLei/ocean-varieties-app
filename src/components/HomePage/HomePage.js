@@ -21,7 +21,6 @@ const HomePage = () => {
 
   // 滚动跳转到对应的 section
   const scrollToSection = (index) => {
-    console.log(index)
     if (sectionsRef.current[index]) {
       sectionsRef.current[index].scrollIntoView({
         behavior: 'smooth',

@@ -8,7 +8,7 @@ import { creatures } from "../../contants/creatures";
 export const SectionOne = ({ onWheel, scrollToNextSection }) => {
   return (
     <section
-      className="section-one"
+      className="page-section"
       id="section-one"
       style={{
         backgroundImage: `url('${process.env.PUBLIC_URL}/homepage/section-one/background.png')`,
@@ -49,16 +49,20 @@ export const SectionOne = ({ onWheel, scrollToNextSection }) => {
 export const SectionTwo = ({ onWheel }) => {
   return (
     <section
-      className="section-one"
-      id="section-one"
+      className="page-section"
+      id="section-two"
       style={{
-        backgroundImage: `url('${process.env.PUBLIC_URL}/homepage/section-one/background.png')`,
+        backgroundImage: `url('${process.env.PUBLIC_URL}/homepage/section-two-bg.png')`,
         backgroundSize: "100% 100%",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
       }}
       onWheel={onWheel}
     >
+      <div className="s2-text-container">
+        <div className="text-chinese">你见过什么样的中国海洋？</div>
+        <div className="text-english">What kind of ocean have you seen in China?</div>
+      </div>
     </section>
   );
 };
@@ -67,16 +71,44 @@ export const SectionTwo = ({ onWheel }) => {
 export const SectionThree = ({ onWheel }) => {
   return (
     <section
-      className="section-one"
-      id="section-one"
+      className="page-section"
+      id="section-three"
       style={{
-        backgroundImage: `url('${process.env.PUBLIC_URL}/homepage/section-one/background.png')`,
+        backgroundImage: `url('${process.env.PUBLIC_URL}/homepage/section-three-bg.png')`,
         backgroundSize: "100% 100%",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
       }}
       onWheel={onWheel}
     >
+      <div className="s3-page-container">
+        {/* 海域面积占比 */}
+        <div className="data-section">
+          <div className="data-chart">
+            <img
+              src={`${process.env.PUBLIC_URL}/homepage/data_charts/area-ratio-chart.png`}
+              alt="area-ratio-chart"
+            />
+          </div>
+          <div className="text-container">
+            <div className="text-chinese">是300万平方公里的澎湃？</div>
+            <div className="text-english">Is it the vast expanse of 3,000,000 k㎡?</div>
+          </div>
+        </div>
+        {/* 海洋生物占比 */}
+        <div className="data-section">
+          <div className="text-container">
+            <div className="text-chinese">还是2.8万余种生物的蓬勃？</div>
+            <div className="text-english">Or the thriving life of over 28,000 species?</div>
+          </div>
+          <div className="data-chart">
+            <img
+              src={`${process.env.PUBLIC_URL}/homepage/data_charts/biology-ratio-chart.png`}
+              alt="biology-ratio-chart"
+            />
+          </div>
+        </div>
+      </div>
     </section>
   );
 };
@@ -85,16 +117,31 @@ export const SectionThree = ({ onWheel }) => {
 export const SectionFour = ({ onWheel }) => {
   return (
     <section
-      className="section-one"
-      id="section-one"
+      className="page-section"
+      id="section-four"
       style={{
-        backgroundImage: `url('${process.env.PUBLIC_URL}/homepage/section-one/background.png')`,
+        backgroundImage: `url('${process.env.PUBLIC_URL}/homepage/section-four-bg.png')`,
         backgroundSize: "100% 100%",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
       }}
       onWheel={onWheel}
     >
+      <div className="s4-page-container">
+        {/* 海错图濒危占比 */}
+        <div className="data-section">
+          <div className="data-chart">
+            <img
+              src={`${process.env.PUBLIC_URL}/homepage/data_charts/endangered-ratio-chart.png`}
+              alt="area-ratio-chart"
+            />
+          </div>
+          <div className="text-container">
+            <div className="text-chinese">“海错遗影”，这是一个关于《海错图》中已经逝去或是濒临危机的生物的记忆网站。</div>
+            <div className="text-english">"&lt;Haicuo Map&gt; Memorization" — a memorial website to the creatures that have passed away or are endangered, as illustrated in the ancient Chinese marine life map: &lt;Haicuo Map&gt;."</div>
+          </div>
+        </div>
+      </div>
     </section>
   );
 };
@@ -103,10 +150,10 @@ export const SectionFour = ({ onWheel }) => {
 export const SectionFive = ({ onWheel }) => {
   return (
     <section
-      className="section-one"
-      id="section-one"
+      className="page-section"
+      id="section-five"
       style={{
-        backgroundImage: `url('${process.env.PUBLIC_URL}/homepage/section-one/background.png')`,
+        backgroundImage: `url('${process.env.PUBLIC_URL}/homepage/section-five-bg.png')`,
         backgroundSize: "100% 100%",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
@@ -121,7 +168,7 @@ export const SectionFive = ({ onWheel }) => {
 export const SectionSix = ({ onClick, selectedType, showSideBar, onTypeSelect }) => {
   return (
     <section
-      className="section-six"
+      className="long-section"
       id="section-six"
       style={{
         backgroundImage: `url('${process.env.PUBLIC_URL}/homepage/section-six/background.png')`,
@@ -167,10 +214,10 @@ export const SectionSix = ({ onClick, selectedType, showSideBar, onTypeSelect })
 export const SectionSeven = ({ onWheel }) => {
   return (
     <section
-      className="section-one"
-      id="section-one"
+      className="page-section"
+      id="section-seven"
       style={{
-        backgroundImage: `url('${process.env.PUBLIC_URL}/homepage/section-one/background.png')`,
+        backgroundImage: `url('${process.env.PUBLIC_URL}/homepage/section-seven-bg.png')`,
         backgroundSize: "100% 100%",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
