@@ -63,7 +63,7 @@ const HomePage = () => {
     if (sectionSix) {
       const sectionSixPosition = sectionSix.getBoundingClientRect();
       // 判断 section-six 是否在可视区域中
-      if (sectionSixPosition.top <= window.innerHeight && sectionSixPosition.bottom >= 0) {
+      if (sectionSixPosition.top <= window.innerHeight / 2 && sectionSixPosition.bottom >= window.innerHeight / 2) {
         setShowSideBar(true); // 显示 SideBar
       } else {
         setShowSideBar(false); // 隐藏 SideBar
