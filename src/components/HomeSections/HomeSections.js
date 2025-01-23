@@ -181,7 +181,7 @@ export const SectionFive = ({ onWheel }) => {
         {/* Second Text Container */}
         <div className="text-container">
           <div className="text-title">Remember Them</div>
-          <div className="text-content" style={{ fontFamily: "'Poppins', serif", lineHeight: "1.5" }}>
+          <div className="text-content" style={{ lineHeight: "1.5" }}>
             Greetings, traveler of archaeological traveler, and welcome to this site!<br />
             Here, please piecing together the stories of 28 endangered species.<br />
             The more critical their status, the more puzzle pieces you must fit together,<br />
@@ -255,6 +255,35 @@ export const SectionSeven = ({ onWheel }) => {
       }}
       onWheel={onWheel}
     >
+      <div className="s5-page-container" style={{ bottom: "30vh" }}>
+        {/* First Text Container */}
+        <div className="text-container">
+          <div className="text-content">
+            亲爱的旅人，<br />
+            感谢你在这里为这些生命驻足。<br />
+            每一个海洋生物都是一片让世界更多样的拼图，<br />
+            让我们共同去维护它。
+          </div>
+          <div className="text-title">记住它们</div>
+        </div>
+        {/* Second Text Container */}
+        <div className="text-container">
+          <div className="text-content" style={{ lineHeight: "1.5" }}>
+            Dear traveler,<br />
+            Thank you for pausing here to honor these lives.<br />
+            Each marine creature is a piece of the puzzle that makes our world more diverse.<br />
+            Let us work together to protect them.
+          </div>
+          <div className="text-title">Remember Them</div>
+        </div>
+        {/* Book Logo */}
+        <div className="book-logo">
+          <img
+            src={`${process.env.PUBLIC_URL}/homepage/book-logo.png`}
+            alt="Book Logo"
+          />
+        </div>
+      </div>
     </section>
   );
 };

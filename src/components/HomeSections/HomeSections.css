@@ -304,15 +304,15 @@
 }
 
 .s5-page-container .text-content {
-  font-family: "FZLanTing", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #333333;
   font-size: 1.6vw; 
   line-height: 1.8;
-  font-weight: 600;
+  font-weight: 500;
 }
 @font-face {
-  font-family: "FZLanTing";
-  src: url("../../../public/fonts/FZLanTingHeiPro_GB18030.ttf");
+  font-family: "Poppins";
+  src: url("../../../public/fonts/Poppins-Light.ttf");
   font-weight: normal;
   font-style: normal;
 }
