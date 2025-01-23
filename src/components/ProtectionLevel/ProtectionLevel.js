@@ -31,7 +31,7 @@ const ProtectionLevel = ({ creature }) => {
               <div className="level-icon">
                 <img
                   src={`${process.env.PUBLIC_URL}/detailspage/protection-level/icons/icon-cms.png`}
-                  alt="icon"
+                  alt="Icon CMS"
                 />
               </div>
               <div className="level-text">
@@ -58,7 +58,7 @@ const ProtectionLevel = ({ creature }) => {
                 <div className="level-icon">
                   <img
                     src={`${process.env.PUBLIC_URL}/detailspage/protection-level/icons/icon-cites.png`}
-                    alt="icon"
+                    alt="Icon CITES"
                   />
                 </div>
                 <div className="level-text">
@@ -84,7 +84,7 @@ const ProtectionLevel = ({ creature }) => {
                   <div className="level-icon">
                     <img
                       src={`${process.env.PUBLIC_URL}/detailspage/protection-level/icons/icon-iucn.png`}
-                      alt="icon"
+                      alt="Icon IUCN"
                     />
                   </div>
                   <div className="level-text">
@@ -110,7 +110,7 @@ const ProtectionLevel = ({ creature }) => {
                     <div className="china-level-icon">
                       <img 
                         src={`${process.env.PUBLIC_URL}/detailspage/protection-level/icons/icon-china.png`}
-                        alt="china icon" 
+                        alt="Icon China" 
                       />
                     </div>
                     <div className="china-level-text">

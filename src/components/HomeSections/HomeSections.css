@@ -124,7 +124,7 @@
 /* Section 2 */
 .s2-text-container {
   position: absolute;
-  top: 35vh; /* 距离顶部 40vh */
+  top: 35vh; /* 距离顶部 35vh */
   left: 50%;
   transform: translateX(-50%); 
   display: flex;
@@ -251,6 +251,68 @@
 @font-face {
   font-family: "Poppins";
   src: url("../../../public/fonts/Poppins-Light.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* Section 5 */
+.s5-page-container {
+  position: absolute;
+  top: 18vh; /* 距离顶部 15vh */
+  left: 50%;
+  transform: translate(-50%); 
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center; 
+  width: 80vw;
+  gap: 2vh; /* 上下间距 */
+}
+
+.s5-page-container .book-logo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.s5-page-container .book-logo img {
+  max-width: 4.2vw; 
+  max-height: 7.5vh;
+}
+
+.s5-page-container .text-container {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.s5-page-container .text-title {
+  font-family: "LQXianEr", sans-serif;
+  color: #333333;
+  font-size: 4.2vw; 
+  line-height: 1.2;
+}
+@font-face {
+  font-family: "LQXianEr";
+  src: url("../../../public/fonts/LQXianEr.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.s5-page-container .text-content {
+  font-family: "FZLanTing", sans-serif;
+  color: #333333;
+  font-size: 1.6vw; 
+  line-height: 1.8;
+  font-weight: 600;
+}
+@font-face {
+  font-family: "FZLanTing";
+  src: url("../../../public/fonts/FZLanTingHeiPro_GB18030.ttf");
   font-weight: normal;
   font-style: normal;
 }

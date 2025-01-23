@@ -87,7 +87,7 @@ export const SectionThree = ({ onWheel }) => {
           <div className="data-chart">
             <img
               src={`${process.env.PUBLIC_URL}/homepage/data_charts/area-ratio-chart.png`}
-              alt="area-ratio-chart"
+              alt="Area Ratio Chart"
             />
           </div>
           <div className="text-container">
@@ -104,7 +104,7 @@ export const SectionThree = ({ onWheel }) => {
           <div className="data-chart">
             <img
               src={`${process.env.PUBLIC_URL}/homepage/data_charts/biology-ratio-chart.png`}
-              alt="biology-ratio-chart"
+              alt="Biology Ratio Chart"
             />
           </div>
         </div>
@@ -133,7 +133,7 @@ export const SectionFour = ({ onWheel }) => {
           <div className="data-chart">
             <img
               src={`${process.env.PUBLIC_URL}/homepage/data_charts/endangered-ratio-chart.png`}
-              alt="area-ratio-chart"
+              alt="Endangered Ratio Chart"
             />
           </div>
           <div className="text-container">
@@ -160,6 +160,37 @@ export const SectionFive = ({ onWheel }) => {
       }}
       onWheel={onWheel}
     >
+      <div className="s5-page-container">
+        {/* Book Logo */}
+        <div className="book-logo">
+          <img
+            src={`${process.env.PUBLIC_URL}/homepage/book-logo.png`}
+            alt="Book Logo"
+          />
+        </div>
+        {/* First Text Container */}
+        <div className="text-container">
+          <div className="text-title">记住它们</div>
+          <div className="text-content">
+            你好，考察古生生命的旅人，欢迎来到本站！<br />
+            请你通过拼图还原28种濒危生物的信息，<br />
+            濒危情况越是严重的生物，拼图块数越多，还原难度也越大。<br />
+            请记住：你拼齐的信息越多，它们被看到、被保护的可能性也越大。
+          </div>
+        </div>
+        {/* Second Text Container */}
+        <div className="text-container">
+          <div className="text-title">Remember Them</div>
+          <div className="text-content" style={{ fontFamily: "'Poppins', serif", lineHeight: "1.5" }}>
+            Greetings, traveler of archaeological traveler, and welcome to this site!<br />
+            Here, please piecing together the stories of 28 endangered species.<br />
+            The more critical their status, the more puzzle pieces you must fit together,<br />
+            and the greater the challenge of reconstruction.<br />
+            Remember: the more you restore,<br />
+            the more likely these creatures will be seen and protected.
+          </div>
+        </div>
+      </div>
     </section>
   );
 };
