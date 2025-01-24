@@ -132,13 +132,9 @@
   align-items: center; 
   justify-content: center; 
   text-align: center; 
-}
-
-.s2-text-container .text-chinese {
   font-family: "LQXianEr", sans-serif;
   color: #333333;
-  font-size: 4.8vw; 
-  line-height: 1;
+  line-height: 1.2;
   white-space: nowrap; /* 禁止换行 */
 }
 @font-face {
@@ -148,12 +144,12 @@
   font-style: normal;
 }
 
+.s2-text-container .text-chinese {
+  font-size: 4.8vw; 
+}
+
 .s2-text-container .text-english {
-  font-family: "LQXianEr", sans-serif;
-  color: #333333;
   font-size: 3.6vw; 
-  line-height: 1;
-  white-space: nowrap; /* 禁止换行 */
 }
 
 

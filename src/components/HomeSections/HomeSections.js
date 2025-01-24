@@ -181,7 +181,7 @@ export const SectionFive = ({ onWheel }) => {
         {/* Second Text Container */}
         <div className="text-container">
           <div className="text-title">Remember Them</div>
-          <div className="text-content" style={{ lineHeight: "1.5" }}>
+          <div className="text-content" style={{ lineHeight: "1.5", fontWeight: "600" }}>
             Greetings, traveler of archaeological traveler, and welcome to this site!<br />
             Here, please piecing together the stories of 28 endangered species.<br />
             The more critical their status, the more puzzle pieces you must fit together,<br />
@@ -278,7 +278,7 @@ export const SectionSeven = ({ onWheel }) => {
         </div>
         {/* Second Text Container */}
         <div className="text-container">
-          <div className="text-content" style={{ lineHeight: "1.5" }}>
+          <div className="text-content" style={{ lineHeight: "1.5", fontWeight: "600" }}>
             Dear traveler,<br />
             Thank you for pausing here to honor these lives.<br />
             Each marine creature is a piece of the puzzle that makes our world more diverse.<br />
