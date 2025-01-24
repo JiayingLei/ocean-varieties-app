@@ -381,6 +381,15 @@
   font-style: normal;
 }
 
+/* .modal-content .text-container::-webkit-scrollbar {
+  width: 10px; 
+}
+
+.modal-content .text-container::-webkit-scrollbar-thumb {
+  background-color: white; 
+  border-radius: 4px; 
+} */
+
 .modal-content .text-title {
   width: 100%;
   text-align: center;
