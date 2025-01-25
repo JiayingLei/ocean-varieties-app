@@ -381,20 +381,20 @@
   font-style: normal;
 }
 
-/* .modal-content .text-container::-webkit-scrollbar {
+.modal-content .text-container::-webkit-scrollbar {
   width: 10px; 
 }
 
 .modal-content .text-container::-webkit-scrollbar-thumb {
   background-color: white; 
   border-radius: 4px; 
-} */
+}
 
 .modal-content .text-title {
   width: 100%;
-  text-align: center;
-  margin-bottom: 15px;
-  font-size: 1.8vw; 
+  text-align: left;
+  margin: 15px 0;
+  font-size: 1.3vw; 
   line-height: 1.5;
   font-weight: 600;
 }

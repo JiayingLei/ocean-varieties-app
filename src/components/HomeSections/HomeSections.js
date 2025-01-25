@@ -325,6 +325,7 @@ export const SectionSeven = ({ onWheel }) => {
             <div className="text-container">
               {/* <div className="text-title">Reference</div> */}
               <div className="text-content">
+                <div className="text-title">Data Sources</div>
                 [1] 故宫博物院.清宫海错图[M].故宫出版社,2014.<br />
                 [2] 张辰亮.海错图笔记[M].中信出版集团股份有限公司,2020.<br />
                 [3] 中华人民共和国国务院新闻办公室. 中国的海洋生态环境保护[Z]. 北京: 中华人民共和国国务院新闻办公室, 2024.7.<br />
@@ -357,6 +358,8 @@ export const SectionSeven = ({ onWheel }) => {
                 [30] https://baike.baidu.com/item/路氏双髻鲨<br />
                 [31] https://baike.baidu.com/item/刀鲚<br />
                 [32] https://baike.baidu.com/item/牡蛎礁<br />
+
+                <div className="text-title">Image Sources</div>
                 [33] en.namu.wiki<br />
                 [34] loachloachap.hatenablog.com<br />
                 [35] www.divessi.com<br />
@@ -385,6 +388,9 @@ export const SectionSeven = ({ onWheel }) => {
                 [58] conchology.be<br />
                 [59] en.yna.co.kr<br />
                 [60] bk.chimelong.com<br />
+
+                <div className="text-title">Audio Sources</div>
+                The audio in this project was created using Suno.
               </div>
             </div>
           </div>
