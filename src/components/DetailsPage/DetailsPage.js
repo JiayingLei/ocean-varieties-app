@@ -7,6 +7,7 @@ import Jigsaw from "../Jigsaw/Jigsaw";
 import ProtectionLevel from "../ProtectionLevel/ProtectionLevel";
 import { EndangerReasons, EndangerState } from "../Endangerment/Endangerment";
 import ActualImage from "../ActualImage/ActualImage";
+import { FishBonesExplorer } from '../FishBonesExplorer/FishBonesExplorer';
 
 const DetailsPage = () => {
   const { id } = useParams(); 
@@ -27,16 +28,21 @@ const DetailsPage = () => {
   // 每个 Section 的内容
   const sections = [
     { title: 'Section 1', content: <Jigsaw creature={creature} /> }, // Jigsaw for Section 1
-    { title: 'Section 2', content: <ProtectionLevel creature={creature} /> }, // ProtectionLevel for Section 2
-    { 
-      title: 'Section 3', 
-      content: <EndangerReasons creature={creature} />, // EndangerReasons for Section 3
+    { title: 'Section 2', content: <ActualImage creature={creature} /> }, // ActualImage for Section 2
+    { title: 'Section 3', 
+      content: <EndangerReasons creature={creature} />, // EndangerReasons for Section 4
       subSections: [
-        { title: 'Section 3A', content: <EndangerState creature={creature} /> }, // EndangerState for Section 3A
+        { title: 'Section 3A', content: <FishBonesExplorer creature={creature} />} // FishBonesExplorer for Section 3A
       ]
     },
-    { title: 'Section 4', content: <ActualImage creature={creature} /> } // ActualImage for Section 4
-  ];
+    { 
+      title: 'Section 4', 
+      content: <ProtectionLevel creature={creature} />, // ProtectionLevel for Section 4
+      subSections: [
+        { title: 'Section 4A', content: <EndangerState creature={creature} /> }, // EndangerState for Section 4A
+      ]
+    },
+  ];  
 
   // 滚动跳转到对应的 section & subsection
   const scrollToSection = (index, subIndex = null) => {
@@ -50,28 +56,42 @@ const DetailsPage = () => {
   };
 
   // 监听滚动事件
+  const sectionTransitions = {
+    down: {
+      2: { 
+        null: { section: 2, sub: 0 },  
+        0:    { section: 3, sub: null } 
+      },
+      3: {  
+        null: { section: 3, sub: 0 }  
+      }
+    },
+    up: {
+      3: {  
+        0:    { section: 3, sub: null }, 
+        null: { section: 2, sub: 0 }     
+      },
+      2: { 
+        0:    { section: 2, sub: null },
+        null: { section: 1, sub: null }  
+      }
+    }
+  };
+  
+  // 统一处理滚动事件
   const handleScroll = (event) => {
-    if (event.deltaY > 0) {
-      // 鼠标向下滚动
-      if (currentSection === 2) {
-        // 在 Section-3 时，判断是否滚动到 Section-3A
-        if (currentSubSection === null) {
-          scrollToSection(2, 0);  
-        } else if (currentSubSection === 0) {
-          scrollToSection(3);  
-        }
-      } else if (currentSection < sections.length - 1) {
-        scrollToSection(currentSection + 1); // 跳转到下一个 Section
-      }
-    } else {
-      // 鼠标向上滚动
-      if (currentSection === 2 && currentSubSection === 0) {
-        scrollToSection(2, null); // 在 Section-3A 时，跳转到 Section-3  
-      } else if (currentSection === 3) {
-        scrollToSection(2, 0); // 在 Section-4 时，跳转到 Section-3A  
-      } else if (currentSection > 0) {
-        scrollToSection(currentSection - 1);  // 跳转到上一个 Section
-      }
+    const direction = event.deltaY > 0 ? 'down' : 'up';
+    const transition = sectionTransitions[direction];
+    const subKey = currentSubSection === null ? 'null' : currentSubSection.toString();
+    if (transition[currentSection]?.[subKey]) {
+      const { section, sub } = transition[currentSection][subKey];
+      scrollToSection(section, sub);
+      return;
+    }
+    const sectionChange = direction === 'down' ? 1 : -1;
+    const newSection = currentSection + sectionChange;
+    if (newSection >= 0 && newSection < sections.length) {
+      scrollToSection(newSection);
     }
   };
 
