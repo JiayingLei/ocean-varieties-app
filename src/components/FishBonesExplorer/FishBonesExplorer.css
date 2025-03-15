@@ -161,7 +161,7 @@
   transform: translateX(-50%);
   background-color: rgba(51, 51, 51, 0.5); /* 背景透明度为 50% */
   color: #FFFFFF; 
-  padding:  6px 16px;
+  padding:  4px 16px;
   font-size: 16px;
   line-height: 1.5;
   text-align: left; /* 水平居左文本 */ 
@@ -201,4 +201,24 @@
 .submit-button button:hover {
   background: #333333;
   opacity: 0.5;
+}
+
+.new-scroll-indicator {
+  cursor: pointer;
+  max-width: 3.75%;
+  max-height: 9.5%;
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+.bone-image.no-invert:hover {
+  filter: none;
 }

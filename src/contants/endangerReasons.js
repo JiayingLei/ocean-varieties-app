@@ -17,5 +17,6 @@ export const endangerReasons = [
   description_zh: `${reason.zh}：导致${reason.severity}种海错生物濒危`,
   description_en: `${reason.en}: Leading to the endangerment of ${reason.severity} marine species in <HaiCuo Map>.`,
   image: `${process.env.PUBLIC_URL}/detailspage/endanger-reasons/${reason.zh}.png`,
-  boneImage: `${process.env.PUBLIC_URL}/detailspage/fish-bones-explorer/${reason.zh}.svg`
+  boneImage: `${process.env.PUBLIC_URL}/detailspage/fish-bones-explorer/bone-image/${reason.zh}.svg`,
+  boneImageClicked: `${process.env.PUBLIC_URL}/detailspage/fish-bones-explorer/bone-image-clicked/${reason.zh}.svg`
 }));

@@ -25,25 +25,6 @@ const DetailsPage = () => {
     scrollToSection(section, subSection);
   };
 
-  // 每个 Section 的内容
-  const sections = [
-    { title: 'Section 1', content: <Jigsaw creature={creature} /> }, // Jigsaw for Section 1
-    { title: 'Section 2', content: <ActualImage creature={creature} /> }, // ActualImage for Section 2
-    { title: 'Section 3', 
-      content: <FishBonesExplorer creature={creature} />, // EndangerReasons for Section 4
-      subSections: [
-        { title: 'Section 3A', content: <EndangerReasons creature={creature} />} // FishBonesExplorer for Section 3A
-      ]
-    },
-    { 
-      title: 'Section 4', 
-      content: <ProtectionLevel creature={creature} />, // ProtectionLevel for Section 4
-      subSections: [
-        { title: 'Section 4A', content: <EndangerState creature={creature} /> }, // EndangerState for Section 4A
-      ]
-    },
-  ];  
-
   // 滚动跳转到对应的 section & subsection
   const scrollToSection = (index, subIndex = null) => {
     if (sectionsRef.current[index]) {
@@ -54,6 +35,25 @@ const DetailsPage = () => {
       setCurrentSubSection(subIndex);
     }
   };
+
+  // 每个 Section 的内容
+  const sections = [
+    { title: 'Section 1', content: <Jigsaw creature={creature} /> },
+    { title: 'Section 2', content: <ActualImage creature={creature} /> },
+    { title: 'Section 3', 
+      content: <FishBonesExplorer creature={creature} scrollToNextSection={() => scrollToSection(2, 0)} />, 
+      subSections: [
+        { title: 'Section 3A', content: <EndangerReasons creature={creature} />}
+      ]
+    },
+    { 
+      title: 'Section 4', 
+      content: <ProtectionLevel creature={creature} />,
+      subSections: [
+        { title: 'Section 4A', content: <EndangerState creature={creature} /> },
+      ]
+    },
+  ];
 
   // 监听滚动事件
   const sectionTransitions = {
