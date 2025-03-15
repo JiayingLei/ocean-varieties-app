@@ -52,7 +52,7 @@ export const SectionTwo = ({ onWheel }) => {
       className="page-section"
       id="section-two"
       style={{
-        backgroundImage: `url('${process.env.PUBLIC_URL}/homepage/section-two-bg.png')`,
+        backgroundImage: `url('${process.env.PUBLIC_URL}/homepage/section-2-bg.png')`,
         backgroundSize: "100% 100%",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
@@ -74,7 +74,7 @@ export const SectionThree = ({ onWheel }) => {
       className="page-section"
       id="section-three"
       style={{
-        backgroundImage: `url('${process.env.PUBLIC_URL}/homepage/section-three-bg.png')`,
+        backgroundImage: `url('${process.env.PUBLIC_URL}/homepage/section-3-bg.png')`,
         backgroundSize: "100% 100%",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
@@ -120,7 +120,7 @@ export const SectionFour = ({ onWheel }) => {
       className="page-section"
       id="section-four"
       style={{
-        backgroundImage: `url('${process.env.PUBLIC_URL}/homepage/section-four-bg.png')`,
+        backgroundImage: `url('${process.env.PUBLIC_URL}/homepage/section-4-bg.png')`,
         backgroundSize: "100% 100%",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
@@ -153,7 +153,7 @@ export const SectionFive = ({ onWheel }) => {
       className="page-section"
       id="section-five"
       style={{
-        backgroundImage: `url('${process.env.PUBLIC_URL}/homepage/section-five-bg.png')`,
+        backgroundImage: `url('${process.env.PUBLIC_URL}/homepage/section-5-bg.png')`,
         backgroundSize: "100% 100%",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
@@ -258,7 +258,7 @@ export const SectionSeven = ({ onWheel }) => {
       className="page-section" 
       id="section-seven" 
       style={{ 
-        backgroundImage: `url('${process.env.PUBLIC_URL}/homepage/section-seven-bg.png')`, 
+        backgroundImage: `url('${process.env.PUBLIC_URL}/homepage/section-7-bg.png')`, 
         backgroundSize: "100% 100%", 
         backgroundPosition: "center", 
         backgroundRepeat: "no-repeat" 
@@ -272,7 +272,9 @@ export const SectionSeven = ({ onWheel }) => {
             亲爱的旅人，<br />
             感谢你在这里为这些生命驻足。<br />
             每一个海洋生物都是一片让世界更多样的拼图，<br />
-            让我们共同去维护它。
+            让我们承继古人崇尚自然、记录自然的精神，<br />
+            以行动守护这片蔚蓝的家园。<br />
+            让古人笔下的海洋图景不再只是历史的记忆，而是永恒的现实。<br />
           </div>
           <div className="text-title">记住它们</div>
         </div>
@@ -282,13 +284,157 @@ export const SectionSeven = ({ onWheel }) => {
             Dear traveler,<br />
             Thank you for pausing here to honor these lives.<br />
             Each marine creature is a piece of the puzzle that makes our world more diverse.<br />
-            Let us work together to protect them.
+            Let us honor the ancients' spirit of documenting nature,<br />
+            and take action to protect our blue home,<br />
+            so their vision of the ocean remains not just history, but a living reality.<br />
           </div>
           <div className="text-title">Remember Them</div>
         </div>
         {/* Book Logo */}
         <div className="book-logo">
           <img src={`${process.env.PUBLIC_URL}/homepage/book-logo.png`} alt="Book Logo" />
+        </div>
+      </div>
+
+      {/* Citation Logo */}
+      <div 
+        className="citation-logo-container"
+        onMouseEnter={() => !isModalOpen && setIsHovered(true)}
+        onMouseLeave={() => !isModalOpen && setIsHovered(false)}
+      >
+        <div 
+          className={`citation-logo ${isModalOpen || isHovered ? "focus-state" : ""}`}
+          onClick={!isModalOpen ? toggleModal : undefined}
+          style={{ cursor: isModalOpen ? 'default' : 'pointer' }}
+          title={!isModalOpen ? "Click here to view the cited data sources" : ""}
+        >
+          <img 
+            src={`${process.env.PUBLIC_URL}/homepage/citation-logo.png`} 
+            alt="Citation Logo" 
+            style={{ display: isModalOpen || isHovered ? 'none' : 'block' }}
+          />
+          <img 
+            src={`${process.env.PUBLIC_URL}/homepage/citation-logo-fs.png`} 
+            alt="Citation Logo Focus State" 
+            style={{ display: isModalOpen || isHovered ? 'block' : 'none' }}
+          />
+        </div>
+      </div>
+
+      {/* Modal */}
+      {isModalOpen && (
+        <div className="modal-overlay">
+          <div className="modal-content">
+            <button className="modal-close-button" onClick={toggleModal}>×</button>
+            <div className="text-container">
+              {/* <div className="text-title">Reference</div> */}
+              <div className="text-content">
+                <div className="text-title">Data Sources</div>
+                [1] 故宫博物院.清宫海错图[M].故宫出版社,2014.<br />
+                [2] 张辰亮.海错图笔记[M].中信出版集团股份有限公司,2020.<br />
+                [3] 中华人民共和国国务院新闻办公室. 中国的海洋生态环境保护[Z]. 北京: 中华人民共和国国务院新闻办公室, 2024.7.<br />
+                [4] 联合国环境规划署. (2011年8月24日). “环境署最新研究报告：地球上有多少物种？870万种”. 联合国新闻. https://news.un.org/zh/story/2011/08/157582<br />
+                [5] https://baike.baidu.com/item/棱皮龟<br />
+                [6] https://baike.baidu.com/item/中国鲎<br />
+                [7] https://baike.baidu.com/item/黄花鱼<br />
+                [8] https://baike.baidu.com/item/松江鲈<br />
+                [9] https://baike.baidu.com/item/带鱼<br />
+                [10] https://baike.baidu.com/item/儒艮<br />
+                [11] https://baike.baidu.com/item/海蛇<br />
+                [12] https://baike.baidu.com/item/石磺<br />
+                [13] https://baike.baidu.com/item/海笔<br />
+                [14] https://baike.baidu.com/item/弓形革囊星虫<br />
+                [15] https://baike.baidu.com/item/柳珊瑚<br />
+                [16] https://baike.baidu.com/item/沙蚕<br />
+                [17] https://baike.baidu.com/item/玳瑁<br />
+                [18] https://baike.baidu.com/item/锯鳐科<br />
+                [19] https://baike.baidu.com/item/柳叶鳗<br />
+                [20] https://baike.baidu.com/item/鲥鱼<br />
+                [21] https://baike.baidu.com/item/花鳗鲡<br />
+                [22] https://baike.baidu.com/item/海马<br />
+                [23] https://baike.baidu.com/item/海龙<br />
+                [24] https://baike.baidu.com/item/斑海豹<br />
+                [25] https://baike.baidu.com/item/水獺<br />
+                [26] https://baike.baidu.com/item/露脊鲸<br />
+                [27] baike.sogou.com/m/fullLemma?lid=461711<br />
+                [28] https://baike.baidu.com/item/锤头双髻鲨<br />
+                [29] https://baike.baidu.com/item/无沟双髻鲨<br />
+                [30] https://baike.baidu.com/item/路氏双髻鲨<br />
+                [31] https://baike.baidu.com/item/刀鲚<br />
+                [32] https://baike.baidu.com/item/牡蛎礁<br />
+
+                <div className="text-title">Image Sources</div>
+                [33] en.namu.wiki<br />
+                [34] loachloachap.hatenablog.com<br />
+                [35] www.divessi.com<br />
+                [36] aninu.de<br />
+                [37] www.linkedin.com<br />
+                [38] www.ifaw.org<br />
+                [39] www.flickr.com<br />
+                [40] k.sina.cn<br />
+                [41] oceanomics.blogspot.com<br />
+                [42] www.sohu.com<br />
+                [43] www.disl.edu/<br />
+                [44] sdg.iisd.org<br />
+                [45] https://kknews.cc/<br />
+                [46] http://www.eslitech.com/<br />
+                [47] zh.wikipedia.org<br />
+                [48] www.shutterstock.com<br />
+                [49] lasaisonbleue.com<br />
+                [50] www.chinapress.com.my<br />
+                [51] http://aquaria.palo-alto.ca.us/<br />
+                [52] www.enanyang.my<br />
+                [53] wapbaike.baidu.com<br />
+                [54] baike.baidu.com<br />
+                [55] www.ifaw.org<br />
+                [56] www.zooborns.com<br />
+                [57] baike.baidu.com<br />
+                [58] conchology.be<br />
+                [59] en.yna.co.kr<br />
+                [60] bk.chimelong.com<br />
+
+                <div className="text-title">Audio Sources</div>
+                The audio in this project was created using Suno.
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+    </section>
+  );
+};
+
+// Section 8
+export const SectionEight = ({ onWheel }) => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
+
+  const toggleModal = () => {
+    setIsModalOpen(!isModalOpen);
+    if (isModalOpen) {
+      setIsHovered(false);
+    }
+  };
+
+  return (
+    <section 
+      className="page-section" 
+      id="section-eight" 
+      style={{ 
+        backgroundImage: `url('${process.env.PUBLIC_URL}/homepage/section-8-bg.png')`, 
+        backgroundSize: "100% 100%", 
+        backgroundPosition: "center", 
+        backgroundRepeat: "no-repeat" 
+      }} 
+      onWheel={onWheel}
+    >
+      <div className="s8-page-container">
+        {/* Text Container */}
+        <div className="text-container">
+          <div className="text-content">
+            Remember Me:<br />
+            &lt;HaiCuo Map&gt; Memorization<br />
+          </div>
         </div>
       </div>
 

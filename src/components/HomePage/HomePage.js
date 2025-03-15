@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react"; 
 import { useNavigate } from "react-router-dom"; 
 import "./HomePage.css"; 
-import { SectionOne, SectionTwo, SectionThree, SectionFour, SectionFive, SectionSix, SectionSeven } from "../HomeSections/HomeSections";
+import { SectionOne, SectionTwo, SectionThree, SectionFour, SectionFive, SectionSix, SectionSeven, SectionEight } from "../HomeSections/HomeSections";
 
 const HomePage = () => {
   const navigate = useNavigate();
@@ -41,17 +41,21 @@ const HomePage = () => {
     setCurrentSection(visibleSection);
 
     if (event.deltaY > 0) {
-      // 鼠标向下滚动
-      if (visibleSection < sectionsRef.current.length - 2) {
-        scrollToSection(visibleSection + 1); // 跳转到下一个 Section
+      // 向下滚动
+      if (visibleSection < 5) {
+        scrollToSection(visibleSection + 1);
+      } else if (visibleSection === 6) {
+        scrollToSection(7);
       }
     } else {
-      // 鼠标向上滚动
-      if (visibleSection > 0 && visibleSection < sectionsRef.current.length - 2) {
-        scrollToSection(visibleSection - 1); // 跳转到上一个 Section
+      // 向上滚动
+      if (visibleSection > 0 && visibleSection < 5) {
+        scrollToSection(visibleSection - 1);
+      } else if (visibleSection === 7) {
+        scrollToSection(6);
       }
     }
-  };  
+  };
 
   const handleTypeSelect = (type) => {
     setSelectedType(type); // 更新当前选中的类型
@@ -88,6 +92,7 @@ const HomePage = () => {
     { title: "Section 5", content: <SectionFive onWheel={handleMouseWheel} /> },
     { title: "Section 6", content: <SectionSix onClick={handleClick} selectedType={selectedType} showSideBar={showSideBar} onTypeSelect={handleTypeSelect} /> },
     { title: "Section 7", content: <SectionSeven onWheel={handleMouseWheel} /> },
+    { title: "Section 8", content: <SectionEight onWheel={handleMouseWheel} /> },
   ];
 
 
