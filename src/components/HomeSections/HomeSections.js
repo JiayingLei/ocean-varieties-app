@@ -561,11 +561,19 @@ export const SectionFour = ({ onWheel }) => {
       }} 
       onWheel={onWheel}
     >
-      <div className="ex4-page-container">
+      <div className="s8-page-container">
         {/* Text Container */}
-        <div className="text-container">
-          <div className="text-content">
+        <div className="text-container" style={{ position: 'absolute', top: '8vh' }}>
+          <div 
+            className="text-content" 
+            style={{ fontFamily: "'FZLanTing', serif", fontSize: '1.6vw', lineHeight: '1.2', fontWeight: '600' }}
+          >
             古人眼中的海洋，与我们今日所见的，是否相同？<br />
+          </div>
+          <div 
+            className="text-content" 
+            style={{ fontFamily: "'Poppins', serif", fontSize: '1.6vw', lineHeight: '1.2', fontWeight: '600' }}
+          >
             Is the ocean seen by the ancients the same as what we see today?<br />
           </div>
         </div>
@@ -588,11 +596,19 @@ export const SectionFive = ({ onWheel }) => {
       }} 
       onWheel={onWheel}
     >
-      <div className="ex5-page-container">
+      <div className="s8-page-container">
         {/* Text Container */}
-        <div className="text-container">
-          <div className="text-content">
+        <div className="text-container" style={{ position: 'absolute', top: '5vh' }}>
+          <div 
+            className="text-content" 
+            style={{ fontFamily: "'FZLanTing', serif", fontSize: '1.6vw', lineHeight: '1.2', fontWeight: '600' }}
+          >
             清代画家兼博物学家聂璜，将海洋生物的瑰丽与奇异凝结于《海错图》中。<br />
+          </div>
+          <div 
+            className="text-content" 
+            style={{ fontFamily: "'Poppins', serif", fontSize: '1.6vw', lineHeight: '1.2', fontWeight: '600' }}
+          >
             Qing Dynasty painter and naturalist Nie Huang captured the splendor and<br />
             peculiarity of marine life in The &lt;HaiCuo Map&gt; .<br />
           </div>
@@ -616,11 +632,19 @@ export const SectionSix = ({ onWheel }) => {
       }} 
       onWheel={onWheel}
     >
-      <div className="ex6-page-container">
+      <div className="s8-page-container" style={{ height: '100vh' }}>
         {/* Text Container */}
-        <div className="text-container">
-          <div className="text-content">
+        <div className="text-container" style={{ position: 'absolute', bottom: '5vh' }}>
+          <div 
+            className="text-content" 
+            style={{ fontFamily: "'FZLanTing', serif", fontSize: '1.6vw', lineHeight: '1.2', fontWeight: '600', color: 'white' }}
+          >
             时光流转，沧海桑田，我们是否还能在今日的海洋中，寻找到那些曾被古人描绘的奇异生物？<br />
+          </div>
+          <div 
+            className="text-content" 
+            style={{ fontFamily: "'Poppins', serif", fontSize: '1.6vw', lineHeight: '1.2', fontWeight: '600', color: 'white' }}
+          >
             As time passes and the world changes, can we still find the extraordinary creatures<br />
             once depicted by the ancients in today's oceans?<br />
           </div>
