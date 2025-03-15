@@ -4,7 +4,7 @@ import OceanCreature from "../OceanCreature/OceanCreature";
 import SideBar from "../SideBar/SideBar";
 import { creatures } from "../../contants/creatures";
 
-// Section 1
+// 首 - 1
 export const SectionOne = ({ onWheel, scrollToNextSection }) => {
   return (
     <section
@@ -45,7 +45,7 @@ export const SectionOne = ({ onWheel, scrollToNextSection }) => {
   );
 };
 
-// Section 2
+// 首 - 2
 export const SectionTwo = ({ onWheel }) => {
   return (
     <section
@@ -67,7 +67,7 @@ export const SectionTwo = ({ onWheel }) => {
   );
 };
 
-// Section 3
+// 首 - 3
 export const SectionThree = ({ onWheel }) => {
   return (
     <section
@@ -113,8 +113,8 @@ export const SectionThree = ({ onWheel }) => {
   );
 };
 
-// Section 4
-export const SectionFour = ({ onWheel }) => {
+// 首 - 7（原 - 4）
+export const SectionSeven = ({ onWheel }) => {
   return (
     <section
       className="page-section"
@@ -146,8 +146,8 @@ export const SectionFour = ({ onWheel }) => {
   );
 };
 
-// Section 5
-export const SectionFive = ({ onWheel }) => {
+// 首 - 8（原 - 5）
+export const SectionEight = ({ onWheel }) => {
   return (
     <section
       className="page-section"
@@ -195,8 +195,8 @@ export const SectionFive = ({ onWheel }) => {
   );
 };
 
-// Section 6
-export const SectionSix = ({ onClick, selectedType, showSideBar, onTypeSelect }) => {
+// 中 - 9（原 - 6）
+export const SectionNine = ({ onClick, selectedType, showSideBar, onTypeSelect }) => {
   return (
     <section
       className="long-section"
@@ -241,8 +241,8 @@ export const SectionSix = ({ onClick, selectedType, showSideBar, onTypeSelect })
   );
 };
 
-// Section 7
-export const SectionSeven = ({ onWheel }) => {
+// 尾 - 10（原 - 7）
+export const SectionTen = ({ onWheel }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
 
@@ -404,8 +404,8 @@ export const SectionSeven = ({ onWheel }) => {
   );
 };
 
-// Section 8
-export const SectionEight = ({ onWheel }) => {
+// 尾 - 11（原 - 8）
+export const SectionEleven = ({ onWheel }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
 
@@ -542,6 +542,90 @@ export const SectionEight = ({ onWheel }) => {
           </div>
         </div>
       )}
+    </section>
+  );
+};
+
+// 新增首页
+// 首 - ex4
+export const SectionFour = ({ onWheel }) => {
+  return (
+    <section 
+      className="page-section" 
+      id="section-eight" 
+      style={{ 
+        backgroundImage: `url('${process.env.PUBLIC_URL}/homepage/section-ex4-bg.png')`, 
+        backgroundSize: "100% 100%", 
+        backgroundPosition: "center", 
+        backgroundRepeat: "no-repeat" 
+      }} 
+      onWheel={onWheel}
+    >
+      <div className="s8-page-container">
+        {/* Text Container */}
+        <div className="text-container">
+          <div className="text-content">
+            古人眼中的海洋，与我们今日所见的，是否相同？<br />
+            Is the ocean seen by the ancients the same as what we see today?<br />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+// 首 - ex5
+export const SectionFive = ({ onWheel }) => {
+  return (
+    <section 
+      className="page-section" 
+      id="section-eight" 
+      style={{ 
+        backgroundImage: `url('${process.env.PUBLIC_URL}/homepage/section-ex5-bg.png')`, 
+        backgroundSize: "100% 100%", 
+        backgroundPosition: "center", 
+        backgroundRepeat: "no-repeat" 
+      }} 
+      onWheel={onWheel}
+    >
+      <div className="s8-page-container">
+        {/* Text Container */}
+        <div className="text-container">
+          <div className="text-content">
+            清代画家兼博物学家聂璜，将海洋生物的瑰丽与奇异凝结于《海错图》中。<br />
+            Qing Dynasty painter and naturalist Nie Huang captured the splendor and<br />
+            peculiarity of marine life in The &lt;HaiCuo Map&gt; .<br />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+// 首 - ex6
+export const SectionSix = ({ onWheel }) => {
+  return (
+    <section 
+      className="page-section" 
+      id="section-eight" 
+      style={{ 
+        backgroundImage: `url('${process.env.PUBLIC_URL}/homepage/section-ex6-bg.png')`, 
+        backgroundSize: "100% 100%", 
+        backgroundPosition: "center", 
+        backgroundRepeat: "no-repeat" 
+      }} 
+      onWheel={onWheel}
+    >
+      <div className="s8-page-container">
+        {/* Text Container */}
+        <div className="text-container">
+          <div className="text-content">
+            时光流转，沧海桑田，我们是否还能在今日的海洋中，寻找到那些曾被古人描绘的奇异生物？<br />
+            As time passes and the world changes, can we still find the extraordinary creatures<br />
+            once depicted by the ancients in today's oceans?<br />
+          </div>
+        </div>
+      </div>
     </section>
   );
 };

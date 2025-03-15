@@ -1,7 +1,20 @@
 import React, { useState, useEffect, useRef } from "react"; 
 import { useNavigate } from "react-router-dom"; 
 import "./HomePage.css"; 
-import { SectionOne, SectionTwo, SectionThree, SectionFour, SectionFive, SectionSix, SectionSeven, SectionEight } from "../HomeSections/HomeSections";
+import {
+  SectionOne,
+  SectionTwo,
+  SectionThree,
+  SectionFour,
+  SectionFive,
+  SectionSix,
+  SectionSeven,
+  SectionEight,
+  SectionNine,
+  SectionTen,
+  SectionEleven
+} from "../HomeSections/HomeSections";
+
 
 const HomePage = () => {
   const navigate = useNavigate();
@@ -42,17 +55,17 @@ const HomePage = () => {
 
     if (event.deltaY > 0) {
       // 向下滚动
-      if (visibleSection < 5) {
+      if (visibleSection < 8) {
         scrollToSection(visibleSection + 1);
-      } else if (visibleSection === 6) {
-        scrollToSection(7);
+      } else if (visibleSection === 9) {
+        scrollToSection(10);
       }
     } else {
       // 向上滚动
-      if (visibleSection > 0 && visibleSection < 5) {
+      if (visibleSection > 0 && visibleSection < 8) {
         scrollToSection(visibleSection - 1);
-      } else if (visibleSection === 7) {
-        scrollToSection(6);
+      } else if (visibleSection === 10) {
+        scrollToSection(9);
       }
     }
   };
@@ -85,15 +98,20 @@ const HomePage = () => {
 
   // 每个 Section 的内容
   const sections = [
-    { title: "Section 1", content: <SectionOne onWheel={handleMouseWheel} scrollToNextSection={scrollToNextSection}/> },
+    { title: "Section 1", content: <SectionOne onWheel={handleMouseWheel} scrollToNextSection={scrollToNextSection} /> },
     { title: "Section 2", content: <SectionTwo onWheel={handleMouseWheel} /> },
     { title: "Section 3", content: <SectionThree onWheel={handleMouseWheel} /> },
     { title: "Section 4", content: <SectionFour onWheel={handleMouseWheel} /> },
     { title: "Section 5", content: <SectionFive onWheel={handleMouseWheel} /> },
-    { title: "Section 6", content: <SectionSix onClick={handleClick} selectedType={selectedType} showSideBar={showSideBar} onTypeSelect={handleTypeSelect} /> },
+    { title: "Section 6", content: <SectionSix onWheel={handleMouseWheel} /> },
     { title: "Section 7", content: <SectionSeven onWheel={handleMouseWheel} /> },
     { title: "Section 8", content: <SectionEight onWheel={handleMouseWheel} /> },
-  ];
+  
+    { title: "Section 9", content: <SectionNine onClick={handleClick} selectedType={selectedType} showSideBar={showSideBar} onTypeSelect={handleTypeSelect} /> },
+  
+    { title: "Section 10", content: <SectionTen onWheel={handleMouseWheel} /> },
+    { title: "Section 11", content: <SectionEleven onWheel={handleMouseWheel} /> }, 
+  ];  
 
 
   return (
