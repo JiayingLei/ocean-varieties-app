@@ -130,6 +130,16 @@ export const SectionSeven = ({ onWheel }) => {
       <div className="s4-page-container">
         {/* 海错图濒危占比 */}
         <div className="data-section">
+          <div className="text-container">
+            <div className="text-chinese" style={{ fontFamily: "'FZLanTing', serif" }}>
+              聂璜的《海错图》不仅是一幅幅海洋生物的图谱，更是一扇通往过去的窗口，<br />
+              让我们得以窥见古人眼中的海洋世界。<br />
+            </div>
+            <div className="text-english">
+              Nie Huang's &lt;HaiCuo Map&gt; is more than just a collection of marine life illustrations-it is a<br />
+              window into the past, offering us a glimpse of the ocean as seen by the ancients.<br />
+            </div>
+          </div>
           <div className="data-chart">
             <img
               src={`${process.env.PUBLIC_URL}/homepage/data_charts/endangered-ratio-chart.png`}
@@ -137,8 +147,13 @@ export const SectionSeven = ({ onWheel }) => {
             />
           </div>
           <div className="text-container">
-            <div className="text-chinese">“海错遗影”，这是一个关于《海错图》中已经逝去或是濒临危机的生物的记忆网站。</div>
-            <div className="text-english">"&lt;HaiCuo Map&gt; Memorization" — a memorial website to the creatures that have passed away or are endangered, as illustrated in the ancient Chinese marine life map: &lt;HaiCuo Map&gt;."</div>
+            <div className="text-chinese" style={{ fontFamily: "'FZLanTing', serif" }}>
+              “海错遗影”，这是一个关于《海错图》中已经逝去或是濒临危机的生物的记忆网站。<br />
+            </div>
+            <div className="text-english">
+              "&lt;HaiCuo Map&gt; Memorization" — a memorial website to the creatures that have passed away or<br />
+              are endangered, as illustrated in the ancient Chinese marine life map: &lt;HaiCuo Map&gt;."<br />
+            </div>
           </div>
         </div>
       </div>
@@ -171,23 +186,23 @@ export const SectionEight = ({ onWheel }) => {
         {/* First Text Container */}
         <div className="text-container">
           <div className="text-title">记住它们</div>
-          <div className="text-content">
-            你好，考察古生生命的旅人，欢迎来到本站！<br />
+          <div className="text-content"  style={{ fontFamily: "'FZLanTing', serif" }}>
+            你好，考察古老生命的旅人，欢迎来到本站！<br />
             请你通过拼图还原28种濒危生物的信息，<br />
-            濒危情况越是严重的生物，拼图块数越多，还原难度也越大。<br />
-            请记住：你拼齐的信息越多，它们被看到、被保护的可能性也越大。
+            濒危情况越是严峻的生物，拼图的块数也越多，还原难度也越大。<br />
+            让我们一起从拼图开始，还原海错生物们濒危的真相......<br />
           </div>
         </div>
         {/* Second Text Container */}
         <div className="text-container">
           <div className="text-title">Remember Them</div>
-          <div className="text-content" style={{ lineHeight: "1.5", fontWeight: "600" }}>
+          <div className="text-content">
             Greetings, traveler of archaeological traveler, and welcome to this site!<br />
             Here, please piecing together the stories of 28 endangered species.<br />
             The more critical their status, the more puzzle pieces you must fit together,<br />
             and the greater the challenge of reconstruction.<br />
-            Remember: the more you restore,<br />
-            the more likely these creatures will be seen and protected.
+            Let's start with a puzzle and piece together the hidden truth of the endangered<br />
+            &lt;HaiCuo Map&gt; creatures...
           </div>
         </div>
       </div>

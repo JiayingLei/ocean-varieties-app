@@ -215,7 +215,7 @@
 .s4-page-container .data-section {
   display: flex;
   flex-direction: column; 
-  width: 80vw; 
+  width: 90vw; 
   height: 80vh; 
   gap: 2vh; /* 上下间距 */
 }
@@ -236,12 +236,12 @@
   display: flex;
   flex-direction: column; 
   justify-content: center; 
-  text-align: left;
-  padding: 0 80px;
+  text-align: center;
+  padding: 0 30px;
   font-family: "Poppins", sans-serif; /* 设置字体 */
   color: #333333;
-  font-size: 1.8vw; 
-  line-height: 1.5;
+  font-size: 1.7vw; 
+  line-height: 1.2;
   font-weight: 600;
 }
 @font-face {
@@ -303,8 +303,8 @@
   font-family: "Poppins", sans-serif;
   color: #333333;
   font-size: 1.6vw; 
-  line-height: 1.8;
-  font-weight: 500;
+  line-height: 1.5;
+  font-weight: 600;
 }
 @font-face {
   font-family: "Poppins";
