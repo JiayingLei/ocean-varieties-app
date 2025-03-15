@@ -36,12 +36,14 @@ export const FishBonesExplorer = ({ creature }) => {
               <div key={category} className="bones-category-container">
                 <div className="bones-list">
                   {reasons.map((reason, index) => (
-                    <img 
-                      key={index} 
-                      src={reason.boneImage} 
-                      alt={`Bone representing ${reason.zh}`} 
-                      className="fish-bone"
-                    />
+                    <div className="bone-container" data-tooltip={reason.description_zh + "\n" + reason.description_en}>
+                      <img 
+                        key={index} 
+                        src={reason.boneImage} 
+                        alt={`Bone representing ${reason.zh}`} 
+                        className="bone-image"
+                      />
+                    </div>
                   ))}
                 </div>
               </div>
