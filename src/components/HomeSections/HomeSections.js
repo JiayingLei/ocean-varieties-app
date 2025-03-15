@@ -552,7 +552,7 @@ export const SectionFour = ({ onWheel }) => {
   return (
     <section 
       className="page-section" 
-      id="section-eight" 
+      id="section-ex-four" 
       style={{ 
         backgroundImage: `url('${process.env.PUBLIC_URL}/homepage/section-ex4-bg.png')`, 
         backgroundSize: "100% 100%", 
@@ -561,7 +561,7 @@ export const SectionFour = ({ onWheel }) => {
       }} 
       onWheel={onWheel}
     >
-      <div className="s8-page-container">
+      <div className="ex4-page-container">
         {/* Text Container */}
         <div className="text-container">
           <div className="text-content">
@@ -579,7 +579,7 @@ export const SectionFive = ({ onWheel }) => {
   return (
     <section 
       className="page-section" 
-      id="section-eight" 
+      id="section-ex-five" 
       style={{ 
         backgroundImage: `url('${process.env.PUBLIC_URL}/homepage/section-ex5-bg.png')`, 
         backgroundSize: "100% 100%", 
@@ -588,7 +588,7 @@ export const SectionFive = ({ onWheel }) => {
       }} 
       onWheel={onWheel}
     >
-      <div className="s8-page-container">
+      <div className="ex5-page-container">
         {/* Text Container */}
         <div className="text-container">
           <div className="text-content">
@@ -607,7 +607,7 @@ export const SectionSix = ({ onWheel }) => {
   return (
     <section 
       className="page-section" 
-      id="section-eight" 
+      id="section-ex-six" 
       style={{ 
         backgroundImage: `url('${process.env.PUBLIC_URL}/homepage/section-ex6-bg.png')`, 
         backgroundSize: "100% 100%", 
@@ -616,7 +616,7 @@ export const SectionSix = ({ onWheel }) => {
       }} 
       onWheel={onWheel}
     >
-      <div className="s8-page-container">
+      <div className="ex6-page-container">
         {/* Text Container */}
         <div className="text-container">
           <div className="text-content">
