@@ -46,12 +46,19 @@ export const EndangerReasons = ({ creature }) => {
 };
 
 
-export const EndangerState = ({ creature }) => {
+export const EndangerState = ({ creature }) => { 
   return (
     <div className="endanger-state">
-      <div className="state-container">
-        <div className="state-chinese">{creature.endangerment.state.zh}</div>
-        <div className="state-english">{creature.endangerment.state.en}</div>
+      <div className="state-bubble">
+        <img 
+          className="bubble-image" 
+          src={`${process.env.PUBLIC_URL}/detailspage/endanger-state-bubble.png`} 
+          alt="Bubble" 
+        />
+        <div className="state-container">
+          <div className="state-chinese">{creature.endangerment.state.zh}</div>
+          <div className="state-english">{creature.endangerment.state.en}</div>
+        </div>
       </div>
     </div>
   );

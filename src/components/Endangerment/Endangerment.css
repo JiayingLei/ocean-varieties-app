@@ -60,7 +60,7 @@
   width: 100vw;
   height: 100vh;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
   background-image: url('../../../public/detailspage/endanger-state-bg.png');
   background-size: 100% 100%;
@@ -70,20 +70,40 @@
   padding: 0;
 } 
 
+.state-bubble {
+  position: relative;
+  width: 70vw;
+  height: 40vh;
+  padding-left: 15vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bubble-image {
+  position: absolute;
+  max-width: 60vw;
+  max-height: 36vh;
+  object-fit: contain;
+}
+
 .state-container {
   display: flex;
   flex-direction: column;
-  justify-content: center; 
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  align-items: center; 
-  width: 80%; 
+  width: 100%;
   height: 100%;
+  z-index: 1; /* 让文字位于图片之上 */
+  padding-left: 100px;
+  padding-right: 50px;
 }
 
 .state-chinese {
   font-family: "FZLanTing", sans-serif; /* 中文字体 */
   color: #333333;
-  font-size: 2.4vw;
+  font-size: 1.8vw;
   line-height: 1.2;
   white-space: pre-line; /* 处理换行符 */
   margin: 10px 0; /* 上下间距 */
@@ -98,7 +118,7 @@
 .state-english {
   font-family: "Times New Roman", serif; /* 英文字体 */
   color: #333333;
-  font-size: 2.4vw;
+  font-size: 1.8vw;
   line-height: 1;
   white-space: pre-line; /* 处理换行符 */
   margin: 10px 0; /* 上下间距 */
