@@ -1,29 +1,141 @@
-/* FishBonesExplorerPage */
 .fish-bones-explorer {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-image: url('../../../public/detailspage/bones-explorer-bg.png');
-    background-size: 100% 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin: 0;
-    padding: 0;
-  }  
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('../../../public/detailspage/bones-explorer-bg.png');
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}  
 
-/* 顶部标题容器 */
-.explorer-header {
+.explorer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
   text-align: center;
-  padding: 2rem 0;
-  max-width: 800px;
-  margin: 0 auto;
+  padding: 75px 0;
+}
+
+.explorer-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  flex-direction: column;
 }
 
 .explorer-header h1 {
-  font-size: 1.8rem;
-  color: #2a6496;
-  line-height: 1.4;
+  color: #333333;
+  font-size: 48px; 
+  line-height: 0;
+  font-family: 'Poppins-SemiBold', sans-serif;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  opacity: 0.9;
+}
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: url("../../../public/fonts/Poppins-SemiBold.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.explorer-header h1::before,
+.explorer-header h1::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: rgba(202, 71, 68, 0.8);
+  margin: 0 20px;
+}
+
+.explorer-header p {
+  color: #333333;
+  font-size: 24px; 
+  line-height: 1.5;
+  font-family: 'Poppins-Medium', sans-serif;
+  font-weight: 500;
+  opacity: 0.9;
+}
+@font-face {
+  font-family: "Poppins-Medium";
+  src: url("../../../public/fonts/Poppins-Medium.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.fish-bone-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative; 
+}
+
+.spine-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%
+}
+
+.bones-container {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  width: 50%;
+}
+
+.bones-category-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1; 
+  text-align: center;
+}
+
+.bones-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px; 
+}
+
+.fish-bone {
+  max-height: 100%;
+  max-width: 80px;
+}
+
+.submit-button { 
+  margin: 20px 0;
+}
+
+.submit-button button {
+  background: #333333;
+  color: #ffffff;
+  border: none;
+  padding: 10px 40px;
+  font-size: 32px;
+  cursor: pointer;
+  border-radius: 38.4px;
+  font-family: 'Poppins-SemiBold', sans-serif;
+  font-weight: 600;
+}
+
+.submit-button button:hover {
+  background: #333333;
+  opacity: 0.5;
 }

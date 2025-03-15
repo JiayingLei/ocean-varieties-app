@@ -30,9 +30,9 @@ const DetailsPage = () => {
     { title: 'Section 1', content: <Jigsaw creature={creature} /> }, // Jigsaw for Section 1
     { title: 'Section 2', content: <ActualImage creature={creature} /> }, // ActualImage for Section 2
     { title: 'Section 3', 
-      content: <EndangerReasons creature={creature} />, // EndangerReasons for Section 4
+      content: <FishBonesExplorer creature={creature} />, // EndangerReasons for Section 4
       subSections: [
-        { title: 'Section 3A', content: <FishBonesExplorer creature={creature} />} // FishBonesExplorer for Section 3A
+        { title: 'Section 3A', content: <EndangerReasons creature={creature} />} // FishBonesExplorer for Section 3A
       ]
     },
     { 
